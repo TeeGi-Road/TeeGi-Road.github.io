@@ -1,0 +1,262 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+  font-size: 29px;
+}
+
+nav {
+  background-color: #4D4D4D;
+  font-size: 16px;
+}
+
+nav a {
+  letter-spacing: 6px;
+}
+
+.img-logo {
+  width: 80px;
+  height: 35px;
+  background-image: url("../img/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+span {
+  color: #FF7E1E;
+}
+
+.custom-row-mx-15 {
+  margin: 0 15px;
+}
+
+.section1 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section1 .img-main-digibar {
+  max-width: 1110px;
+  height: 100px;
+  background-image: url("../img/main-digibar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section1 .localtime {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 46px;
+  color: #FFC10E;
+  text-align: left;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 3px;
+}
+
+.section1 .img-main-Shal-map {
+  max-width: 1110px;
+  height: 700px;
+  background-image: url("../img/main-Shal-map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section2 .img-main-Shal-title {
+  max-width: 350px;
+  height: 80px;
+  background-image: url("../img/main-Shal-title.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 .text-main-Shal-cotent {
+  margin-top: 40px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section2 .img-main-Shal-km {
+  margin-top: 150px;
+  max-width: 445px;
+  height: 105px;
+}
+
+.section2 .img-main-Shal-line {
+  margin-top: 133px;
+  max-width: 1110px;
+  height: 140px;
+  background-image: url("../img/main-Shal-line.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.section2 .img-main-Shal-train {
+  margin-top: -19px;
+  max-width: 850px;
+  height: 130px;
+}
+
+.img-main-Shal-bgi {
+  max-width: 1920px;
+  height: 1080px;
+  padding: 0;
+  background-image: url("../img/main-Shal-bgi.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section3 .img-Shal-chimeTitle {
+  margin-left: 15px;
+  max-width: 1110px;
+  height: 80px;
+  background-image: url("../img/Shal-chimeTitle.png");
+}
+
+.section3 .img-Shal-chime01 {
+  margin-top: 75px;
+  max-width: 1110px;
+  height: 402px;
+  border-radius: 5px;
+  background-image: url("../img/Shal-chime01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section3 .text-Shal-chime01 {
+  margin-top: 75px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section4 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section4 .img-Shal-chime02 {
+  max-width: 1110px;
+  height: 880px;
+  border-radius: 5px;
+  background-image: url("../img/Shal-chime02.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section4 .text-Shal-chime02 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.7em;
+}
+
+.section5 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section5 .img-Shal-cjcuTitle01 {
+  max-width: 350px;
+  height: 105px;
+  background-image: url("../img/Shal-cjcuTitle01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5 .img-Shal-cjcuTitle02 {
+  margin-top: 40px;
+  max-width: 350px;
+  height: 105px;
+  background-image: url("../img/Shal-cjcuTitle02.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5 .text-Shal-cjcu01 {
+  letter-spacing: 6px;
+  line-height: 1.6em;
+}
+
+.section5 .img-Shal-cjcu01 {
+  margin-top: 80px;
+  max-width: 1110px;
+  height: 550px;
+  border-radius: 5px;
+  background-image: url("../img/Shal-cjcu01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section6 {
+  min-height: 50vh;
+  padding: 150px 0 100px 0;
+  text-align: center;
+}
+
+.section6 .img-main-btn-Shal {
+  max-width: 255px;
+  height: 360px;
+  border-radius: 20px;
+  background-image: url("../img/main-btn-Shal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: '';
+}
+
+footer {
+  min-height: 200px;
+  padding: 90px 0;
+  background-color: #4D4D4D;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+footer div {
+  padding: 15px;
+}
+
+footer div p {
+  margin-bottom: 0;
+  letter-spacing: 5px;
+}
+/*# sourceMappingURL=style.css.map */
