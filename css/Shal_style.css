@@ -1,0 +1,96 @@
+.section3 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section3 .img-Shal-chimeTitle01 {
+  max-width: 450px;
+  height: 80px;
+  background-image: url("../img/Shal/Shal-chimeTitle01.png");
+}
+
+.section3 .img-Shal-chimeTitle02 {
+  max-width: 490px;
+  height: 80px;
+  background-image: url("../img/Shal/Shal-chimeTitle02.png");
+}
+
+.section3 .img-Shal-chime01 {
+  margin-top: 75px;
+  max-width: 1110px;
+  height: 402px;
+  border-radius: 5px;
+  background-image: url("../img/Shal/Shal-chime01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section3 .text-Shal-chime01 {
+  margin-top: 75px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section4 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section4 .img-Shal-chime02 {
+  max-width: 1110px;
+  height: 880px;
+  border-radius: 5px;
+  background-image: url("../img/Shal/Shal-chime02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section4 .text-Shal-chime02 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 1.7em;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.section5 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section5 .img-Shal-cjcuTitle01 {
+  max-width: 350px;
+  height: 105px;
+  background-image: url("../img/Shal/Shal-cjcuTitle01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5 .img-Shal-cjcuTitle02 {
+  margin-top: 40px;
+  max-width: 350px;
+  height: 105px;
+  background-image: url("../img/Shal/Shal-cjcuTitle02.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5 .text-Shal-cjcu01 {
+  letter-spacing: 6px;
+  line-height: 1.6em;
+}
+
+.section5 .img-Shal-cjcu01 {
+  margin-top: 80px;
+  max-width: 1110px;
+  height: 550px;
+  border-radius: 5px;
+  background-image: url("../img/Shal/Shal-cjcu01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=Shal_style.css.map */

@@ -1,0 +1,124 @@
+$navbar-color: #4D4D4D;
+$sub-color: #FF7E1E;
+$time-color: #FFC10E;
+
+$font-size-content-m: 16px;
+$font-size-content-l: 29px;
+$font-size-content-time: 46px;
+$font-size-content-h2: 47px;
+$font-size-content-h1: 76px;
+
+$web-font: 'Noto Sans TC',
+sans-serif;
+$web-font-1: 'Share Tech Mono',
+monospace;
+
+// 版型A
+.section3 {
+    min-height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+
+    // 單行標題(分兩區塊)
+    .img-Shal-chimeTitle01 {
+        // margin-left: 15px;
+        max-width: 450px;
+        height: 80px;
+        background-image: url('../img/Shal/Shal-chimeTitle01.png');
+    }
+
+    .img-Shal-chimeTitle02 {
+        // margin-left: 15px;
+        max-width: 490px;
+        height: 80px;
+        background-image: url('../img/Shal/Shal-chimeTitle02.png');
+    }
+
+    // 滿版圖片
+    .img-Shal-chime01 {
+        margin-top: 75px;
+        max-width: 1110px;
+        height: 402px;
+        border-radius: 5px;
+        background-image: url('../img/Shal/Shal-chime01.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    // 滿版內文
+    .text-Shal-chime01 {
+        margin-top: 75px;
+        letter-spacing: 7px;
+        line-height: 1.6em;
+    }
+}
+
+// 版型B
+.section4 {
+    min-height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+
+    // 滿版圖片
+    .img-Shal-chime02 {
+        max-width: 1110px;
+        height: 880px;
+        border-radius: 5px;
+        background-image: url('../img/Shal/Shal-chime02.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    // 置中4欄位內文
+    .text-Shal-chime02 {
+        font-size: $font-size-content-m;
+        color: #fff;
+        letter-spacing: 2px;
+        line-height: 1.7em;
+        text-shadow: 1px 1px 5px #000;
+    }
+}
+
+// 版型C
+.section5 {
+    min-height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+
+    // 4欄位單行標題
+    .img-Shal-cjcuTitle01 {
+        max-width: 350px;
+        height: 105px;
+        background-image: url('../img/Shal/Shal-cjcuTitle01.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    // 4欄位兩行標題
+    .img-Shal-cjcuTitle02 {
+        margin-top: 40px;
+        max-width: 350px;
+        height: 105px;
+        background-image: url('../img/Shal/Shal-cjcuTitle02.png');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    // 6欄位內文
+    .text-Shal-cjcu01 {
+        letter-spacing: 6px;
+        line-height: 1.6em;
+    }
+
+    // 滿版圖片
+    .img-Shal-cjcu01 {
+        margin-top: 80px;
+        max-width: 1110px;
+        height: 550px;
+        border-radius: 5px;
+        background-image: url('../img/Shal/Shal-cjcu01.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
