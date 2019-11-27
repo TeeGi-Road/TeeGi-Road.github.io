@@ -15,82 +15,134 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-// 天氣
-fetch(
-        'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D'
-    )
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (weatherData) {
-        // 先將取得的資料, 定位至欲處理的筆數上
-        var locations = weatherData.records.location;
-        var cards = document.querySelector('.weatherCards');
-        // foreach處理, 並定義各參數的資料來源(定位)
-        locations.forEach(location => {
-            var locationName = location.locationName;
-            var stime = location.weatherElement[0].time[0].startTime.substr(5, 11);
-            // var etime = location.weatherElement[0].time[0].endTime.substr(11, 5);
-            var etime = location.weatherElement[0].time[0].endTime.substr(5, 11);
-            var Wx = location.weatherElement[0].time[0].parameter.parameterName;
-            var WxCode = location.weatherElement[0].time[0].parameter.parameterValue;
+
+// 取得目前page路徑
+var pageUrl = document.location.pathname;
+
+// 臺灣各縣市鄉鎮未來3天(72小時)逐3小時天氣預報 + 跑馬燈
+// 判斷pageUrl是否包含支線名稱, 是則帶入api網址取得json資料
+if (pageUrl.indexOf('Neiw') !== -1) {
+    // 內灣 新竹縣橫山鄉
+    setMarqueeUrl('../img/main/mq/NeiwMq.png', '2600px');
+    getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-009?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E6%A9%AB%E5%B1%B1%E9%84%89&elementName=Wx');
+} else if (pageUrl.indexOf('Liuj') !== -1) {
+    // 六家 新竹縣竹北市
+    setMarqueeUrl('../img/main/mq/LiujMq.png', '2600px');
+    getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-009?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E7%AB%B9%E5%8C%97%E5%B8%82&elementName=Wx');
+} else if (pageUrl.indexOf('Jiji') !== -1) {
+    // 集集 南投縣集集鎮
+    setMarqueeUrl('../img/main/mq/JijiMq.png', '2600px');
+    getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-021?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E9%9B%86%E9%9B%86%E9%8E%AE&elementName=Wx');
+} else if (pageUrl.indexOf('Shal') !== -1) {
+    // 沙崙 臺南市歸仁區
+    setMarqueeUrl('../img/main/mq/ShalMq.png', '2600px');
+    getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-077?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E6%AD%B8%E4%BB%81%E5%8D%80&elementName=Wx');
+} else if (pageUrl.indexOf('Shen') !== -1) {
+    // 深澳 新北市瑞芳區深澳里
+    setMarqueeUrl('../img/main/mq/ShenMq.png', '2680px');
+    getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-069?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E7%91%9E%E8%8A%B3%E5%8D%80&elementName=Wx');
+} else if (pageUrl.indexOf('Ping') !== -1) {
+    // 平溪 新北市平溪區
+    setMarqueeUrl('../img/main/mq/PingMq.png', '2680px');
+    getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-069?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E5%B9%B3%E6%BA%AA%E5%8D%80&elementName=Wx');
+} else {}
+
+function getWeatherData(fetchUrl) {
+    fetch(
+            fetchUrl
+        )
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (weatherData) {
+            // 取得html class
+            var weatherIcon = document.querySelector('.localweather');
+
+            // 縣市鄉鎮名稱
+            // var CityName = weatherData.records.locations[0].locationsName;
+            // var TownName = weatherData.records.locations[0].location[0].locationName;
+            // console.log("縣市鄉鎮: " + CityName, TownName);
+
+            // 取指定時間time[]的天氣現象value
+            // var locationTimes = weatherData.records.locations[0].location[0].weatherElement[0].time;
+            // var Wx = weatherData.records.locations[0].location[0].weatherElement[0].time[0].elementValue[0].value;
+            var WxCode = weatherData.records.locations[0].location[0].weatherElement[0].time[0].elementValue[1].value;
             var WxImg;
-            var PoP = location.weatherElement[1].time[0].parameter.parameterName;
-            var MinT = location.weatherElement[2].time[0].parameter.parameterName;
-            var CI = location.weatherElement[3].time[0].parameter.parameterName;
-            var MaxT = location.weatherElement[4].time[0].parameter.parameterName;
-            // 判斷天氣型態code, 轉換成圖示
+            // 判斷天氣現象value, 轉換成圖示
             switch (WxCode) {
-                case '1':
-                    WxImg = '../02-素材/iconfinder_sun_2995005.png'
+                case '01':
+                case '24':
+                    WxImg = '../img/main/weather/clear.png';
                     break;
-                case '2':
-                case '3':
-                    WxImg = '../02-素材/iconfinder_cloudy_2995001.png'
+                case '02':
+                case '03':
+                case '25':
+                case '26':
+                    WxImg = '../img/main/weather/mostClear.png';
                     break;
-                case '4':
-                case '5':
-                case '6':
-                case '7':
-                    WxImg = '../02-素材/iconfinder_cloud_2995000.png'
+                case '04':
+                case '05':
+                case '06':
+                case '07':
+                case '27':
+                case '28':
+                    WxImg = '../img/main/weather/cloudy.png';
                     break;
-                case '8':
-                case '9':
-                case '10':
-                    WxImg = '../02-素材/iconfinder_rain-cloud_2995003.png'
-                    break;
+                case '08':
                 case '11':
-                    WxImg = '../02-素材/iconfinder_rain_2995004.png'
+                case '18':
+                case '19':
+                case '20':
+                case '21':
+                case '30':
+                case '34':
+                    WxImg = '../img/main/weather/mostClear-rainy.png';
+                    break;
+                case '09':
+                case '10':
+                case '14':
+                case '22':
+                    WxImg = '../img/main/weather/afternoonRain.png';
+                    break;
+                case '12':
+                case '13':
+                case '29':
+                case '31':
+                case '32':
+                case '38':
+                case '39':
+                    WxImg = '../img/main/weather/rainy.png';
+                    break;
+                case '15':
+                case '16':
+                case '17':
+                case '33':
+                case '35':
+                case '36':
+                case '41':
+                    WxImg = '../img/main/weather/thund.png';
+                    break;
+                case '23':
+                case '37':
+                case '42':
+                    WxImg = '../img/main/weather/snow.png';
                     break;
                 default:
-                    WxImg = '../02-素材/iconfinder_sun_2995005.png';
+                    WxImg = '../img/main/weather/clear.png';
                     break;
             }
-            // 將上述參數放入卡片innerHTML
-            // 溫度C = &#8451
-            cards.innerHTML += `
-        <div class="card">
-            <div class="grid item1">
-                <div class="city">${locationName}</div>
-                <div class="datetime">${stime} ~ ${etime}</div>
-            </div>
-            <div class="grid item2">
-                <img class="wx-icon" src="${WxImg}" alt="">
-                <div class="sun">${Wx}</div>
 
-            </div>
-            <div class="grid item2">
-                <div class="minC-maxC">${MinT}&#8451 - ${MaxT}&#8451</div>
-                <div class="rain">降雨機率 ${PoP}%</div>
-                <div class="memo">${CI}</div>
-            </div>
-        </div>
-        `;
-
-            console.log(location.weatherElement[0].time[1].parameter.parameterValue);
+            // 將上述參數放入div innerHTML
+            weatherIcon.innerHTML += `<img src="${WxImg}" alt="">`;
         });
+}
 
-    });
+function setMarqueeUrl(imgurl, imgwidth) {
+    var marquee = document.querySelector('.marquee');
+    marquee.setAttribute('style', `background-image: url('${imgurl}'); width: ${imgwidth};`);
+}
+
+
 
 // 時間
 function showTime() {

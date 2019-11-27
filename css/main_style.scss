@@ -69,6 +69,28 @@ span {
         background-repeat: no-repeat;
     }
 
+    // 跑馬燈
+    .marquee {
+        height: 80px;
+        animation: marquee 20s linear 1s infinite normal;
+    }
+
+    @keyframes marquee {
+        0% {
+            background-position: 0;
+        }
+
+        100% {
+            background-position: -2600px;
+        }
+    }
+
+    // 當地天氣
+    .localweather {
+        min-width: 80px;
+        min-height: 80px;
+    }
+
     // 當地時間
     .localtime {
         font-family: $web-font-1;
@@ -81,11 +103,42 @@ span {
 
     // 支線地圖
     .img-main-map {
+        margin-top: 112px;
         // max-width: 1110px;
-        min-height: 700px;
-        background-image: url('../img/Shal/main-Shal-map.jpg');
-        background-position: center;
+        min-height: 500px;
+        width: 100%;
+        background-position: left;
         background-repeat: no-repeat;
+        padding: 50px 0;
+
+        p {
+            font-weight: bold;
+            font-size: $font-size-content-h1;
+            writing-mode: vertical-rl;
+            // text-align-last: justify;
+            min-height: 40%;
+            letter-spacing: 10px;
+        }
+    }
+
+    .station-start {
+        background-image: url('../img/Shal/Shal-staBtn1st.png');
+        min-width: 286px;
+    }
+
+    .station-arrow {
+        background-image: url('../img/Shal/Shal-staBtnArrow.png');
+        min-width: 190px;
+    }
+
+    .station-stops {
+        background-image: url('../img/Shal/Shal-staBtn1st.png');
+        min-width: 286px;
+    }
+
+    .station-end {
+        background-image: url('../img/Shal/Shal-staBtnlast.png');
+        min-width: 160px;
     }
 }
 
@@ -160,12 +213,63 @@ span {
         max-width: 255px;
         height: 360px;
         border-radius: 20px;
-        // 更換各站點圖片
-        background-image: url('../img/main/main-btn-Shal.png');
         background-position: center;
         background-repeat: no-repeat;
     }
 
+    .img-btn-Neiw {
+        background-image: url('../img/main/main-btn-Neiw.png');
+    }
+
+    .img-btn-Neiw:hover,
+    .img-btn-Neiw:active {
+        background-image: url('../img/main/main-btn-Neiwh.png');
+    }
+
+    .img-btn-Liuj {
+        background-image: url('../img/main/main-btn-Liuj.png');
+    }
+
+    .img-btn-Liuj:hover,
+    .img-btn-Liuj:active {
+        background-image: url('../img/main/main-btn-Liujh.png');
+    }
+
+    .img-btn-Jiji {
+        background-image: url('../img/main/main-btn-Jiji.png');
+    }
+
+    .img-btn-Jiji:hover,
+    .img-btn-Jiji:active {
+        background-image: url('../img/main/main-btn-Jijih.png');
+    }
+
+    .img-btn-Shal {
+        background-image: url('../img/main/main-btn-Shal.png');
+    }
+
+    .img-btn-Shal:hover,
+    .img-btn-Shal:active {
+        background-image: url('../img/main/main-btn-Shalh.png');
+    }
+
+    .img-btn-Shen {
+        background-image: url('../img/main/main-btn-Shen.png');
+    }
+
+    .img-btn-Shen:hover,
+    .img-btn-Shen:active {
+        background-image: url('../img/main/main-btn-Shenh.png');
+    }
+
+    .img-btn-Ping {
+        background-image: url('../img/main/main-btn-Ping.png');
+    }
+
+    .img-btn-Ping:hover,
+    .img-btn-Ping:active {
+        background-image: url('../img/main/main-btn-Pingh.png');
+    }
 }
 
 .swiper-container {

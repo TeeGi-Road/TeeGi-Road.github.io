@@ -50,6 +50,35 @@ span {
   background-repeat: no-repeat;
 }
 
+.section1 .marquee {
+  height: 80px;
+  -webkit-animation: marquee 20s linear 1s infinite normal;
+          animation: marquee 20s linear 1s infinite normal;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -2600px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -2600px;
+  }
+}
+
+.section1 .localweather {
+  min-width: 80px;
+  min-height: 80px;
+}
+
 .section1 .localtime {
   font-family: "Share Tech Mono", monospace;
   font-size: 46px;
@@ -62,10 +91,42 @@ span {
 }
 
 .section1 .img-main-map {
-  min-height: 700px;
-  background-image: url("../img/Shal/main-Shal-map.jpg");
-  background-position: center;
+  margin-top: 112px;
+  min-height: 500px;
+  width: 100%;
+  background-position: left;
   background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.section1 .img-main-map p {
+  font-weight: bold;
+  font-size: 76px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  min-height: 40%;
+  letter-spacing: 10px;
+}
+
+.section1 .station-start {
+  background-image: url("../img/Shal/Shal-staBtn1st.png");
+  min-width: 286px;
+}
+
+.section1 .station-arrow {
+  background-image: url("../img/Shal/Shal-staBtnArrow.png");
+  min-width: 190px;
+}
+
+.section1 .station-stops {
+  background-image: url("../img/Shal/Shal-staBtn1st.png");
+  min-width: 286px;
+}
+
+.section1 .station-end {
+  background-image: url("../img/Shal/Shal-staBtnlast.png");
+  min-width: 160px;
 }
 
 .section2 {
@@ -132,9 +193,62 @@ span {
   max-width: 255px;
   height: 360px;
   border-radius: 20px;
-  background-image: url("../img/main/main-btn-Shal.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.section6 .img-btn-Neiw {
+  background-image: url("../img/main/main-btn-Neiw.png");
+}
+
+.section6 .img-btn-Neiw:hover,
+.section6 .img-btn-Neiw:active {
+  background-image: url("../img/main/main-btn-Neiwh.png");
+}
+
+.section6 .img-btn-Liuj {
+  background-image: url("../img/main/main-btn-Liuj.png");
+}
+
+.section6 .img-btn-Liuj:hover,
+.section6 .img-btn-Liuj:active {
+  background-image: url("../img/main/main-btn-Liujh.png");
+}
+
+.section6 .img-btn-Jiji {
+  background-image: url("../img/main/main-btn-Jiji.png");
+}
+
+.section6 .img-btn-Jiji:hover,
+.section6 .img-btn-Jiji:active {
+  background-image: url("../img/main/main-btn-Jijih.png");
+}
+
+.section6 .img-btn-Shal {
+  background-image: url("../img/main/main-btn-Shal.png");
+}
+
+.section6 .img-btn-Shal:hover,
+.section6 .img-btn-Shal:active {
+  background-image: url("../img/main/main-btn-Shalh.png");
+}
+
+.section6 .img-btn-Shen {
+  background-image: url("../img/main/main-btn-Shen.png");
+}
+
+.section6 .img-btn-Shen:hover,
+.section6 .img-btn-Shen:active {
+  background-image: url("../img/main/main-btn-Shenh.png");
+}
+
+.section6 .img-btn-Ping {
+  background-image: url("../img/main/main-btn-Ping.png");
+}
+
+.section6 .img-btn-Ping:hover,
+.section6 .img-btn-Ping:active {
+  background-image: url("../img/main/main-btn-Pingh.png");
 }
 
 .swiper-container {

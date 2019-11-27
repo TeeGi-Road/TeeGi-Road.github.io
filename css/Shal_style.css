@@ -27,7 +27,6 @@
   max-width: 1110px;
   width: 100%;
   min-height: 402px;
-  border-radius: 5px;
   background-image: url("../img/Shal/Shal-chime01.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -49,7 +48,6 @@
 .section4 .img-Shal-chime02 {
   min-height: 880px;
   height: 100%;
-  border-radius: 5px;
   background-image: url("../img/Shal/Shal-chime02.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -99,7 +97,6 @@
   margin-top: 80px;
   min-height: 550px;
   height: 100%;
-  border-radius: 5px;
   background-image: url("../img/Shal/Shal-cjcu01.jpg");
   background-position: center;
   background-repeat: no-repeat;
