@@ -6,20 +6,27 @@
 
 .section3 .img-Shal-chimeTitle01 {
   max-width: 450px;
-  height: 80px;
+  width: 100%;
+  min-height: 80px;
   background-image: url("../img/Shal/Shal-chimeTitle01.png");
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .section3 .img-Shal-chimeTitle02 {
   max-width: 490px;
-  height: 80px;
+  width: 100%;
+  min-height: 80px;
   background-image: url("../img/Shal/Shal-chimeTitle02.png");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .section3 .img-Shal-chime01 {
   margin-top: 75px;
   max-width: 1110px;
-  height: 402px;
+  width: 100%;
+  min-height: 402px;
   border-radius: 5px;
   background-image: url("../img/Shal/Shal-chime01.jpg");
   background-position: center;
@@ -40,8 +47,8 @@
 }
 
 .section4 .img-Shal-chime02 {
-  max-width: 1110px;
-  height: 880px;
+  min-height: 880px;
+  height: 100%;
   border-radius: 5px;
   background-image: url("../img/Shal/Shal-chime02.jpg");
   background-position: center;
@@ -64,18 +71,22 @@
 
 .section5 .img-Shal-cjcuTitle01 {
   max-width: 350px;
-  height: 105px;
+  width: 100%;
+  max-height: 105px;
+  height: 100%;
   background-image: url("../img/Shal/Shal-cjcuTitle01.png");
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
 }
 
 .section5 .img-Shal-cjcuTitle02 {
   margin-top: 40px;
   max-width: 350px;
-  height: 105px;
+  width: 100%;
+  max-height: 105px;
+  height: 100%;
   background-image: url("../img/Shal/Shal-cjcuTitle02.png");
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
 }
 
@@ -86,8 +97,8 @@
 
 .section5 .img-Shal-cjcu01 {
   margin-top: 80px;
-  max-width: 1110px;
-  height: 550px;
+  min-height: 550px;
+  height: 100%;
   border-radius: 5px;
   background-image: url("../img/Shal/Shal-cjcu01.jpg");
   background-position: center;

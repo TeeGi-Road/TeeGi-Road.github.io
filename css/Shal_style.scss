@@ -21,24 +21,29 @@ monospace;
 
     // 單行標題(分兩區塊)
     .img-Shal-chimeTitle01 {
-        // margin-left: 15px;
         max-width: 450px;
-        height: 80px;
+        width: 100%;
+        min-height: 80px;
         background-image: url('../img/Shal/Shal-chimeTitle01.png');
+        background-position: left;
+        background-repeat: no-repeat;
     }
 
     .img-Shal-chimeTitle02 {
-        // margin-left: 15px;
         max-width: 490px;
-        height: 80px;
+        width: 100%;
+        min-height: 80px;
         background-image: url('../img/Shal/Shal-chimeTitle02.png');
+        background-position: right;
+        background-repeat: no-repeat;
     }
 
     // 滿版圖片
     .img-Shal-chime01 {
         margin-top: 75px;
         max-width: 1110px;
-        height: 402px;
+        width: 100%;
+        min-height: 402px;
         border-radius: 5px;
         background-image: url('../img/Shal/Shal-chime01.jpg');
         background-position: center;
@@ -62,8 +67,9 @@ monospace;
 
     // 滿版圖片
     .img-Shal-chime02 {
-        max-width: 1110px;
-        height: 880px;
+        // max-width: 1110px;
+        min-height: 880px;
+        height: 100%;
         border-radius: 5px;
         background-image: url('../img/Shal/Shal-chime02.jpg');
         background-position: center;
@@ -89,9 +95,11 @@ monospace;
     // 4欄位單行標題
     .img-Shal-cjcuTitle01 {
         max-width: 350px;
-        height: 105px;
+        width: 100%;
+        max-height: 105px;
+        height: 100%;
         background-image: url('../img/Shal/Shal-cjcuTitle01.png');
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
     }
 
@@ -99,9 +107,11 @@ monospace;
     .img-Shal-cjcuTitle02 {
         margin-top: 40px;
         max-width: 350px;
-        height: 105px;
+        width: 100%;
+        max-height: 105px;
+        height: 100%;
         background-image: url('../img/Shal/Shal-cjcuTitle02.png');
-        background-position: center;
+        background-position: left;
         background-repeat: no-repeat;
     }
 
@@ -114,8 +124,9 @@ monospace;
     // 滿版圖片
     .img-Shal-cjcu01 {
         margin-top: 80px;
-        max-width: 1110px;
-        height: 550px;
+        // max-width: 1110px;
+        min-height: 550px;
+        height: 100%;
         border-radius: 5px;
         background-image: url('../img/Shal/Shal-cjcu01.jpg');
         background-position: center;

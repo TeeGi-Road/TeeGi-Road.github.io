@@ -26,9 +26,11 @@ nav {
     a {
         letter-spacing: 6px;
     }
+
     a:hover {
         color: $time-color !important;
     }
+
     a:active {
         color: $sub-color !important;
     }
@@ -62,7 +64,7 @@ span {
     .img-main-digibar {
         // max-width: 1110px;
         min-height: 100px;
-        background-image: url('../img/main-digibar.png');
+        background-image: url('../img/main/main-digibar.png');
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -143,7 +145,7 @@ span {
     // width: 1920px;
     height: 1080px;
     padding: 0;
-    background-image: url('../img/main-bgi.png');
+    background-image: url('../img/main/main-bgi.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,7 +160,8 @@ span {
         max-width: 255px;
         height: 360px;
         border-radius: 20px;
-        background-image: url('../img/main-btn.png');
+        // 更換各站點圖片
+        background-image: url('../img/main/main-btn-Shal.png');
         background-position: center;
         background-repeat: no-repeat;
     }
