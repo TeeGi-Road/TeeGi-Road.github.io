@@ -1,0 +1,38 @@
+.img-index-bgi {
+  max-width: 1920px;
+  height: 1080px;
+  background-image: url("../img/index/index-bgi.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.index1 {
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.index1 .img-index-logo {
+  width: 540px;
+  height: 236px;
+  border: 2px solid #4D4D4D;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.index1 .text-index-logo {
+  margin-top: 40px;
+  letter-spacing: 3px;
+  line-height: 2em;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 5px #000;
+}
+
+.index2 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=index_style.css.map */

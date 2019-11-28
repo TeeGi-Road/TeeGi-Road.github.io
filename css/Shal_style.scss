@@ -2,6 +2,14 @@ $navbar-color: #4D4D4D;
 $sub-color: #FF7E1E;
 $time-color: #FFC10E;
 
+// 支線路線image顏色
+$Neiw-color: #D63428;
+$Liuj-color: #FF7E1E;
+$Jiji-color: #FFC10E;
+$Shal-color: #5EC324;
+$Shen-color: #0071BC;
+$Ping-color: #93278F;
+
 $font-size-content-m: 16px;
 $font-size-content-l: 29px;
 $font-size-content-time: 46px;
@@ -19,35 +27,12 @@ monospace;
     padding: 100px 0;
     text-align: center;
 
-    // 單行標題(分兩區塊)
-    .img-Shal-chimeTitle01 {
-        max-width: 450px;
+    img {
         width: 100%;
-        min-height: 80px;
-        background-image: url('../img/Shal/Shal-chimeTitle01.png');
-        background-position: left;
-        background-repeat: no-repeat;
     }
-
-    .img-Shal-chimeTitle02 {
-        max-width: 490px;
-        width: 100%;
-        min-height: 80px;
-        background-image: url('../img/Shal/Shal-chimeTitle02.png');
-        background-position: right;
-        background-repeat: no-repeat;
-    }
-
     // 滿版圖片
     .img-Shal-chime01 {
         margin-top: 75px;
-        max-width: 1110px;
-        width: 100%;
-        min-height: 402px;
-        background-image: url('../img/Shal/Shal-chime01.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
     }
 
     // 滿版內文
@@ -90,27 +75,13 @@ monospace;
     padding: 100px 0;
     text-align: center;
 
-    // 4欄位單行標題
-    .img-Shal-cjcuTitle01 {
-        max-width: 350px;
+    img {
         width: 100%;
-        max-height: 105px;
-        height: 100%;
-        background-image: url('../img/Shal/Shal-cjcuTitle01.png');
-        background-position: left;
-        background-repeat: no-repeat;
     }
 
     // 4欄位兩行標題
     .img-Shal-cjcuTitle02 {
         margin-top: 40px;
-        max-width: 350px;
-        width: 100%;
-        max-height: 105px;
-        height: 100%;
-        background-image: url('../img/Shal/Shal-cjcuTitle02.png');
-        background-position: left;
-        background-repeat: no-repeat;
     }
 
     // 6欄位內文
@@ -122,11 +93,5 @@ monospace;
     // 滿版圖片
     .img-Shal-cjcu01 {
         margin-top: 80px;
-        // max-width: 1110px;
-        min-height: 550px;
-        height: 100%;
-        background-image: url('../img/Shal/Shal-cjcu01.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
     }
 }

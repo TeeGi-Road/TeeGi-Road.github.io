@@ -59,13 +59,13 @@ function getWeatherData(fetchUrl) {
             var weatherIcon = document.querySelector('.localweather');
 
             // 縣市鄉鎮名稱
-            // var CityName = weatherData.records.locations[0].locationsName;
-            // var TownName = weatherData.records.locations[0].location[0].locationName;
+            var CityName = weatherData.records.locations[0].locationsName;
+            var TownName = weatherData.records.locations[0].location[0].locationName;
             // console.log("縣市鄉鎮: " + CityName, TownName);
 
             // 取指定時間time[]的天氣現象value
             // var locationTimes = weatherData.records.locations[0].location[0].weatherElement[0].time;
-            // var Wx = weatherData.records.locations[0].location[0].weatherElement[0].time[0].elementValue[0].value;
+            var Wx = weatherData.records.locations[0].location[0].weatherElement[0].time[0].elementValue[0].value;
             var WxCode = weatherData.records.locations[0].location[0].weatherElement[0].time[0].elementValue[1].value;
             var WxImg;
             // 判斷天氣現象value, 轉換成圖示
@@ -133,7 +133,7 @@ function getWeatherData(fetchUrl) {
             }
 
             // 將上述參數放入div innerHTML
-            weatherIcon.innerHTML += `<img src="${WxImg}" alt="">`;
+            weatherIcon.innerHTML += `<img src="${WxImg}" alt="${CityName} ${TownName} ${Wx}">`;
         });
 }
 

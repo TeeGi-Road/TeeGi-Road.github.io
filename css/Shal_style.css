@@ -4,33 +4,12 @@
   text-align: center;
 }
 
-.section3 .img-Shal-chimeTitle01 {
-  max-width: 450px;
+.section3 img {
   width: 100%;
-  min-height: 80px;
-  background-image: url("../img/Shal/Shal-chimeTitle01.png");
-  background-position: left;
-  background-repeat: no-repeat;
-}
-
-.section3 .img-Shal-chimeTitle02 {
-  max-width: 490px;
-  width: 100%;
-  min-height: 80px;
-  background-image: url("../img/Shal/Shal-chimeTitle02.png");
-  background-position: right;
-  background-repeat: no-repeat;
 }
 
 .section3 .img-Shal-chime01 {
   margin-top: 75px;
-  max-width: 1110px;
-  width: 100%;
-  min-height: 402px;
-  background-image: url("../img/Shal/Shal-chime01.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .section3 .text-Shal-chime01 {
@@ -67,25 +46,12 @@
   text-align: center;
 }
 
-.section5 .img-Shal-cjcuTitle01 {
-  max-width: 350px;
+.section5 img {
   width: 100%;
-  max-height: 105px;
-  height: 100%;
-  background-image: url("../img/Shal/Shal-cjcuTitle01.png");
-  background-position: left;
-  background-repeat: no-repeat;
 }
 
 .section5 .img-Shal-cjcuTitle02 {
   margin-top: 40px;
-  max-width: 350px;
-  width: 100%;
-  max-height: 105px;
-  height: 100%;
-  background-image: url("../img/Shal/Shal-cjcuTitle02.png");
-  background-position: left;
-  background-repeat: no-repeat;
 }
 
 .section5 .text-Shal-cjcu01 {
@@ -95,10 +61,5 @@
 
 .section5 .img-Shal-cjcu01 {
   margin-top: 80px;
-  min-height: 550px;
-  height: 100%;
-  background-image: url("../img/Shal/Shal-cjcu01.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=Shal_style.css.map */

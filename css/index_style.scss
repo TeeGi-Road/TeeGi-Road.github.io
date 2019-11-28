@@ -1,0 +1,61 @@
+$navbar-color: #4D4D4D;
+$sub-color: #FF7E1E;
+$time-color: #FFC10E;
+
+// 支線路線image顏色
+$Neiw-color: #D63428;
+$Liuj-color: #FF7E1E;
+$Jiji-color: #FFC10E;
+$Shal-color: #5EC324;
+$Shen-color: #0071BC;
+$Ping-color: #93278F;
+
+$font-size-content-m: 16px;
+$font-size-content-l: 29px;
+$font-size-content-time: 46px;
+$font-size-content-h2: 47px;
+$font-size-content-h1: 76px;
+
+$web-font: 'Noto Sans TC',
+sans-serif;
+$web-font-1: 'Share Tech Mono',
+monospace;
+
+.img-index-bgi {
+    max-width: 1920px;
+    height: 1080px;
+    background-image: url('../img/index/index-bgi.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.index1 {
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center;
+
+    .img-index-logo {
+        width: 540px;
+        height: 236px;
+        // background-color: $time-color;
+        border: 2px solid $navbar-color;
+        font-family: $web-font;
+        font-size: 5em;
+        color: #fff;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .text-index-logo {
+        margin-top: 40px;
+        letter-spacing: 3px;
+        line-height: 2em;
+        color: rgba($color: #fff, $alpha: 0.9);
+        text-shadow: 1px 1px 5px #000;
+    }
+}
+
+.index2{
+    min-height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+}

@@ -2,6 +2,14 @@ $navbar-color: #4D4D4D;
 $sub-color: #FF7E1E;
 $time-color: #FFC10E;
 
+// 支線路線image顏色
+$Neiw-color: #D63428;
+$Liuj-color: #FF7E1E;
+$Jiji-color: #FFC10E;
+$Shal-color: #5EC324;
+$Shen-color: #0071BC;
+$Ping-color: #93278F;
+
 $font-size-content-m: 16px;
 $font-size-content-l: 29px;
 $font-size-content-time: 46px;
@@ -34,15 +42,6 @@ nav {
     a:active {
         color: $sub-color !important;
     }
-}
-
-// LOGO: 鐵支路
-.img-logo {
-    min-width: 80px;
-    min-height: 35px;
-    background-image: url('../img/logo.png');
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 // 內文首字 | 
@@ -104,57 +103,23 @@ span {
     // 支線地圖
     .img-main-map {
         margin-top: 112px;
-        // max-width: 1110px;
-        min-height: 500px;
-        width: 100%;
-        background-position: left;
-        background-repeat: no-repeat;
-        padding: 50px 0;
+        display: flex;
+        align-items: center;
 
         p {
             font-weight: bold;
             font-size: $font-size-content-h1;
             writing-mode: vertical-rl;
-            // text-align-last: justify;
-            min-height: 40%;
             letter-spacing: 10px;
+            position: absolute;
         }
-    }
-
-    .station-start {
-        background-image: url('../img/Shal/Shal-staBtn1st.png');
-        min-width: 286px;
-    }
-
-    .station-arrow {
-        background-image: url('../img/Shal/Shal-staBtnArrow.png');
-        min-width: 190px;
-    }
-
-    .station-stops {
-        background-image: url('../img/Shal/Shal-staBtn1st.png');
-        min-width: 286px;
-    }
-
-    .station-end {
-        background-image: url('../img/Shal/Shal-staBtnlast.png');
-        min-width: 160px;
     }
 }
 
 .section2 {
-    min-height: 100vh;
+    min-height: 100%;
     padding: 100px 0;
     text-align: center;
-
-    // 單行標題: 沙崙支旅
-    .img-main-title {
-        // max-width: 350px;
-        min-height: 80px;
-        background-image: url('../img/Shal/main-Shal-title.png');
-        background-position: left;
-        background-repeat: no-repeat;
-    }
 
     // 滿版內文
     .text-main-cotent {
@@ -197,7 +162,6 @@ span {
     max-width: 1920px;
     // width: 1920px;
     height: 1080px;
-    padding: 0;
     background-image: url('../img/main/main-bgi.png');
     background-position: bottom;
     background-repeat: no-repeat;
@@ -210,15 +174,10 @@ span {
     text-align: center;
 
     .img-main-btn {
-        max-width: 255px;
-        height: 360px;
+        // max-width: 255px;
+        // height: 360px;
         border-radius: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 
-    .img-btn-Neiw {
-        background-image: url('../img/main/main-btn-Neiw.png');
     }
 
     .img-btn-Neiw:hover,
@@ -226,17 +185,9 @@ span {
         background-image: url('../img/main/main-btn-Neiwh.png');
     }
 
-    .img-btn-Liuj {
-        background-image: url('../img/main/main-btn-Liuj.png');
-    }
-
     .img-btn-Liuj:hover,
     .img-btn-Liuj:active {
         background-image: url('../img/main/main-btn-Liujh.png');
-    }
-
-    .img-btn-Jiji {
-        background-image: url('../img/main/main-btn-Jiji.png');
     }
 
     .img-btn-Jiji:hover,
@@ -244,26 +195,14 @@ span {
         background-image: url('../img/main/main-btn-Jijih.png');
     }
 
-    .img-btn-Shal {
-        background-image: url('../img/main/main-btn-Shal.png');
-    }
-
     .img-btn-Shal:hover,
     .img-btn-Shal:active {
         background-image: url('../img/main/main-btn-Shalh.png');
     }
 
-    .img-btn-Shen {
-        background-image: url('../img/main/main-btn-Shen.png');
-    }
-
     .img-btn-Shen:hover,
     .img-btn-Shen:active {
         background-image: url('../img/main/main-btn-Shenh.png');
-    }
-
-    .img-btn-Ping {
-        background-image: url('../img/main/main-btn-Ping.png');
     }
 
     .img-btn-Ping:hover,
