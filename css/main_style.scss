@@ -61,33 +61,25 @@ span {
 
     // 電子看板
     .img-main-digibar {
-        // max-width: 1110px;
-        min-height: 100px;
-        background-image: url('../img/main/main-digibar.png');
-        background-position: center;
-        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
     }
 
     // 跑馬燈
     .marquee {
-        height: 80px;
-        animation: marquee 20s linear 1s infinite normal;
-    }
-
-    @keyframes marquee {
-        0% {
-            background-position: 0;
-        }
-
-        100% {
-            background-position: -2600px;
-        }
+        margin-top: 10px;
+        width: 828px;
+        position: absolute;
+        left: 19px;
+        z-index: 2;
+        overflow: hidden;
     }
 
     // 當地天氣
     .localweather {
         min-width: 80px;
         min-height: 80px;
+        z-index: 3;
     }
 
     // 當地時間
@@ -98,6 +90,7 @@ span {
         text-align: left;
         align-self: center;
         letter-spacing: 3px;
+        z-index: 3;
     }
 
     // 支線地圖
@@ -139,21 +132,25 @@ span {
     // 路線圖(含起迄站牌)
     .img-main-line {
         margin-top: 133px;
-        max-width: 1110px;
-        width: 100%;
-        min-height: 140px;
-        height: 100%;
-        background-image: url('../img/Shal/main-Shal-line.png');
-        background-position: bottom;
-        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 1;
+        // max-width: 1110px;
+        // width: 100%;
+        // min-height: 140px;
+        // height: 100%;
+        // background-image: url('../img/Shal/main-Shal-line.png');
+        // background-position: bottom;
+        // background-repeat: no-repeat;
     }
 
     // 火車圖片
     .img-main-train {
-        margin-top: -20px;
-        max-width: 850px;
-        width: 100%;
-        max-height: 130px;
+        margin-top: 114px;
+        // max-width: 850px;
+        // width: 100%;
+        // max-height: 130px;
+        position: absolute;
+        z-index: 2;
     }
 }
 
@@ -173,41 +170,8 @@ span {
     padding: 150px 0 100px 0;
     text-align: center;
 
-    .img-main-btn {
-        // max-width: 255px;
-        // height: 360px;
-        border-radius: 20px;
-
-    }
-
-    .img-btn-Neiw:hover,
-    .img-btn-Neiw:active {
-        background-image: url('../img/main/main-btn-Neiwh.png');
-    }
-
-    .img-btn-Liuj:hover,
-    .img-btn-Liuj:active {
-        background-image: url('../img/main/main-btn-Liujh.png');
-    }
-
-    .img-btn-Jiji:hover,
-    .img-btn-Jiji:active {
-        background-image: url('../img/main/main-btn-Jijih.png');
-    }
-
-    .img-btn-Shal:hover,
-    .img-btn-Shal:active {
-        background-image: url('../img/main/main-btn-Shalh.png');
-    }
-
-    .img-btn-Shen:hover,
-    .img-btn-Shen:active {
-        background-image: url('../img/main/main-btn-Shenh.png');
-    }
-
-    .img-btn-Ping:hover,
-    .img-btn-Ping:active {
-        background-image: url('../img/main/main-btn-Pingh.png');
+    .img-main-btn img {
+        border-radius: 21px;
     }
 }
 

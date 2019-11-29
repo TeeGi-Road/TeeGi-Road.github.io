@@ -52,10 +52,31 @@ monospace;
         color: rgba($color: #fff, $alpha: 0.9);
         text-shadow: 1px 1px 5px #000;
     }
+
+    .img-index-mg {
+        margin-top: 140px;
+        position:absolute;
+        z-index: 1;
+    }
+
+    .marquee {
+        margin-top: 145px;
+        width: 740px;
+        position:absolute;
+        left: 31px;
+        z-index: 2;
+        overflow: hidden;
+    }
 }
 
 .index2{
     min-height: 100vh;
     padding: 100px 0;
     text-align: center;
+
+    .col-2 {
+        img {
+        border-radius: 21px;
+        }
+    }
 }

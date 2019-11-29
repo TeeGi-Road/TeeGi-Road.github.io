@@ -15,7 +15,6 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-
 // 取得目前page路徑
 var pageUrl = document.location.pathname;
 
@@ -23,27 +22,27 @@ var pageUrl = document.location.pathname;
 // 判斷pageUrl是否包含支線名稱, 是則帶入api網址取得json資料
 if (pageUrl.indexOf('Neiw') !== -1) {
     // 內灣 新竹縣橫山鄉
-    setMarqueeUrl('../img/main/mq/NeiwMq.png', '2600px');
+    setMarqueeUrl('./img/main/mq/NeiwMq.png', '內灣線');
     getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-009?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E6%A9%AB%E5%B1%B1%E9%84%89&elementName=Wx');
 } else if (pageUrl.indexOf('Liuj') !== -1) {
     // 六家 新竹縣竹北市
-    setMarqueeUrl('../img/main/mq/LiujMq.png', '2600px');
+    setMarqueeUrl('./img/main/mq/LiujMq.png', '六家線');
     getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-009?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E7%AB%B9%E5%8C%97%E5%B8%82&elementName=Wx');
 } else if (pageUrl.indexOf('Jiji') !== -1) {
     // 集集 南投縣集集鎮
-    setMarqueeUrl('../img/main/mq/JijiMq.png', '2600px');
+    setMarqueeUrl('./img/main/mq/JijiMq.png', '集集線');
     getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-021?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E9%9B%86%E9%9B%86%E9%8E%AE&elementName=Wx');
 } else if (pageUrl.indexOf('Shal') !== -1) {
     // 沙崙 臺南市歸仁區
-    setMarqueeUrl('../img/main/mq/ShalMq.png', '2600px');
+    setMarqueeUrl('./img/main/mq/ShalMq.png', '沙崙線');
     getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-077?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E6%AD%B8%E4%BB%81%E5%8D%80&elementName=Wx');
 } else if (pageUrl.indexOf('Shen') !== -1) {
     // 深澳 新北市瑞芳區深澳里
-    setMarqueeUrl('../img/main/mq/ShenMq.png', '2680px');
+    setMarqueeUrl('./img/main/mq/ShenMq.png', '深澳線');
     getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-069?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E7%91%9E%E8%8A%B3%E5%8D%80&elementName=Wx');
 } else if (pageUrl.indexOf('Ping') !== -1) {
     // 平溪 新北市平溪區
-    setMarqueeUrl('../img/main/mq/PingMq.png', '2680px');
+    setMarqueeUrl('./img/main/mq/PingMq.png', '平溪線');
     getWeatherData('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-069?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D&locationName=%E5%B9%B3%E6%BA%AA%E5%8D%80&elementName=Wx');
 } else {}
 
@@ -137,12 +136,16 @@ function getWeatherData(fetchUrl) {
         });
 }
 
-function setMarqueeUrl(imgurl, imgwidth) {
+function setMarqueeUrl(imgurl, name) {
     var marquee = document.querySelector('.marquee');
-    marquee.setAttribute('style', `background-image: url('${imgurl}'); width: ${imgwidth};`);
+    marquee.innerHTML += `<img src="${imgurl}" alt="${name}的跑馬燈文字">`;
 }
-
-
+// 跑馬燈
+function showMarquee() {
+    $('.marquee').marquee({
+        pauseOnHover: true,
+    });
+}
 
 // 時間
 function showTime() {
@@ -157,8 +160,24 @@ function showTime() {
         '0' + today.getMinutes() :
         today.getMinutes();
 
-    $('.localtime')[0].innerHTML = hour + ' ' + min;
+    $('.localtime')[0].innerHTML = `<p class="px-2 m-0">${hour} ${min}</p>`;
 }
 window.onload = function () {
     setInterval(showTime, 1000);
+    showMarquee();
 }
+
+// 滑鼠移入移出換圖
+$('.img-main-btn img').mouseenter(function () {
+    // 滑鼠移入後, 取得原始src字串
+    // 用'.'split成3段
+    // 加上'h.'後set新src給img
+    var imgsrc = $(this).attr('src');
+    var imgsrcSplit = imgsrc.split('.');
+    $(this).attr('src', "." + imgsrcSplit[1] + "h." + imgsrcSplit[2]);
+
+    // 滑鼠移出後, set原始src給img
+    $(this).mouseleave(function () {
+        $(this).attr('src', imgsrc);
+    });
+});
