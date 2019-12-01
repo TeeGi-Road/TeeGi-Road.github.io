@@ -1,15 +1,23 @@
+.nav1 {
+  display: none;
+}
+
+.nav2 li {
+  position: absolute;
+  cursor: pointer;
+}
+
 .img-index-bgi {
-  max-width: 1920px;
-  height: 1080px;
+  min-height: 100vh;
   background-image: url("../img/index/index-bgi.jpg");
-  background-position: right;
+  background-position: center -1px;
   background-repeat: no-repeat;
 }
 
 .index1 {
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
+  min-height: 100vh;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
 .index1 .img-index-logo {
@@ -22,22 +30,30 @@
   text-shadow: 1px 1px 5px #000;
 }
 
-.index1 .text-index-logo {
-  margin-top: 40px;
-  letter-spacing: 3px;
-  line-height: 2em;
+.index1 .row:nth-child(1) {
+  margin-top: 6.25rem;
+}
+
+.index1 .row:nth-child(2) {
+  margin-top: 2.5rem;
+}
+
+.index1 p {
+  font-size: 1.25rem;
+  letter-spacing: 0.55rem;
+  line-height: 2.25rem;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 1px 1px 5px #000;
 }
 
 .index1 .img-index-mg {
-  margin-top: 140px;
+  margin-top: 8.75rem;
   position: absolute;
   z-index: 1;
 }
 
 .index1 .marquee {
-  margin-top: 145px;
+  margin-top: 9.0625rem;
   width: 740px;
   position: absolute;
   left: 31px;
@@ -47,11 +63,13 @@
 
 .index2 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
 .index2 .col-2 img {
-  border-radius: 21px;
+  border-radius: 1.38rem;
+  -webkit-box-shadow: 4px 4px 5px #aaa;
+          box-shadow: 4px 4px 5px #aaa;
 }
 /*# sourceMappingURL=index_style.css.map */

@@ -138,7 +138,7 @@ function getWeatherData(fetchUrl) {
 
 function setMarqueeUrl(imgurl, name) {
     var marquee = document.querySelector('.marquee');
-    marquee.innerHTML += `<img src="${imgurl}" alt="${name}的跑馬燈文字">`;
+    marquee.innerHTML += `<img src="${imgurl}" alt="${name} 跑馬燈文字 起點站 開往 終點站 經由 停靠站">`;
 }
 // 跑馬燈
 function showMarquee() {
@@ -160,7 +160,7 @@ function showTime() {
         '0' + today.getMinutes() :
         today.getMinutes();
 
-    $('.localtime')[0].innerHTML = `<p class="px-2 m-0">${hour} ${min}</p>`;
+    $('.localtime')[0].innerHTML = `<p class="my-0">${hour} ${min}</p>`;
 }
 window.onload = function () {
     setInterval(showTime, 1000);

@@ -10,29 +10,38 @@ $Shal-color: #5EC324;
 $Shen-color: #0071BC;
 $Ping-color: #93278F;
 
-$font-size-content-m: 16px;
-$font-size-content-l: 29px;
-$font-size-content-time: 46px;
-$font-size-content-h2: 47px;
-$font-size-content-h1: 76px;
+$font-size-content-m: 1rem; // 16px
+$font-size-content-l: 1.8125rem; // 29px
+$font-size-content-time: 2.875rem; // 46px
+$font-size-content-h2: 2.9375rem; // 47px
+$font-size-content-h1: 4.75rem; // 76px
 
 $web-font: 'Noto Sans TC',
 sans-serif;
 $web-font-1: 'Share Tech Mono',
 monospace;
 
+.nav1 {
+    display: none;
+}
+
+.nav2 li {
+    position: absolute;
+    cursor: pointer;
+}
+
+
 .img-index-bgi {
-    max-width: 1920px;
-    height: 1080px;
+    min-height: 100vh;
     background-image: url('../img/index/index-bgi.jpg');
-    background-position: right;
+    background-position: center -1px;
     background-repeat: no-repeat;
 }
 
 .index1 {
-    min-height: 100%;
-    padding: 100px 0;
-    text-align: center;
+    min-height: 100vh;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
 
     .img-index-logo {
         width: 540px;
@@ -45,38 +54,45 @@ monospace;
         text-shadow: 1px 1px 5px #000;
     }
 
-    .text-index-logo {
-        margin-top: 40px;
-        letter-spacing: 3px;
-        line-height: 2em;
+    .row:nth-child(1) {
+        margin-top: 6.25rem;
+    }
+
+    .row:nth-child(2) {
+        margin-top: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        letter-spacing: 0.55rem;
+        line-height: 2.25rem;
         color: rgba($color: #fff, $alpha: 0.9);
         text-shadow: 1px 1px 5px #000;
     }
 
     .img-index-mg {
-        margin-top: 140px;
-        position:absolute;
+        margin-top: 8.75rem;
+        position: absolute;
         z-index: 1;
     }
 
     .marquee {
-        margin-top: 145px;
+        margin-top: 9.0625rem;
         width: 740px;
-        position:absolute;
+        position: absolute;
         left: 31px;
         z-index: 2;
         overflow: hidden;
     }
 }
 
-.index2{
+.index2 {
     min-height: 100vh;
-    padding: 100px 0;
-    text-align: center;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
 
-    .col-2 {
-        img {
-        border-radius: 21px;
-        }
+    .col-2 img {
+        border-radius: 1.38rem;
+        box-shadow: 4px 4px 5px #aaa;
     }
 }

@@ -1,65 +1,58 @@
 .section3 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
-.section3 img {
-  width: 100%;
-}
-
-.section3 .img-Shal-chime01 {
-  margin-top: 75px;
+.section3 .row:nth-child(2) {
+  margin-top: 4.6875rem;
 }
 
 .section3 .text-Shal-chime01 {
-  margin-top: 75px;
-  letter-spacing: 7px;
-  line-height: 1.6em;
+  margin-top: 4.6875rem;
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
 .section4 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
-.section4 .img-Shal-chime02 {
-  min-height: 880px;
-  height: 100%;
-  background-image: url("../img/Shal/Shal-chime02.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+.section4 img {
+  position: absolute;
+  z-index: 1;
 }
 
-.section4 .text-Shal-chime02 {
-  font-size: 16px;
+.section4 p {
+  font-size: 1rem;
   color: #fff;
-  letter-spacing: 2px;
-  line-height: 1.7em;
+  letter-spacing: 0.21rem;
+  line-height: 1.85rem;
   text-shadow: 1px 1px 5px #000;
+  position: absolute;
+  z-index: 2;
+  top: 16.5625rem;
+  left: 23.125rem;
 }
 
 .section5 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
-.section5 img {
-  width: 100%;
+.section5 .col-4 > div:nth-child(2) {
+  margin-top: 2.5rem;
 }
 
-.section5 .img-Shal-cjcuTitle02 {
-  margin-top: 40px;
+.section5 p {
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
-.section5 .text-Shal-cjcu01 {
-  letter-spacing: 6px;
-  line-height: 1.6em;
-}
-
-.section5 .img-Shal-cjcu01 {
-  margin-top: 80px;
+.section5 .row:nth-child(2) {
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=Shal_style.css.map */

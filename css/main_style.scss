@@ -10,11 +10,11 @@ $Shal-color: #5EC324;
 $Shen-color: #0071BC;
 $Ping-color: #93278F;
 
-$font-size-content-m: 16px;
-$font-size-content-l: 29px;
-$font-size-content-time: 46px;
-$font-size-content-h2: 47px;
-$font-size-content-h1: 76px;
+$font-size-content-m: 1rem; // 16px
+$font-size-content-l: 1.8125rem; // 29px
+$font-size-content-time: 2.875rem; // 46px
+$font-size-content-h2: 2.9375rem; // 47px
+$font-size-content-h1: 4.75rem; // 76px
 
 $web-font: 'Noto Sans TC',
 sans-serif;
@@ -32,7 +32,7 @@ nav {
     font-size: $font-size-content-m;
 
     a {
-        letter-spacing: 6px;
+        letter-spacing: 0.6rem;
     }
 
     a:hover {
@@ -49,15 +49,10 @@ span {
     color: $sub-color;
 }
 
-// 手動加上左右margin
-.custom-row-mx-15 {
-    margin: 0 15px;
-}
-
 .section1 {
     min-height: 100vh;
-    padding: 100px 0;
-    text-align: center;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
 
     // 電子看板
     .img-main-digibar {
@@ -67,18 +62,17 @@ span {
 
     // 跑馬燈
     .marquee {
-        margin-top: 10px;
+        margin: 0.63rem 0;
         width: 828px;
         position: absolute;
-        left: 19px;
         z-index: 2;
+        left: 19px;
         overflow: hidden;
     }
 
     // 當地天氣
     .localweather {
-        min-width: 80px;
-        min-height: 80px;
+        padding: 0.597rem 0.469rem;
         z-index: 3;
     }
 
@@ -87,88 +81,69 @@ span {
         font-family: $web-font-1;
         font-size: $font-size-content-time;
         color: $time-color;
-        text-align: left;
+        letter-spacing: 0.1rem;
+        padding: 0 0.66rem;
         align-self: center;
-        letter-spacing: 3px;
         z-index: 3;
     }
 
-    // 支線地圖
-    .img-main-map {
-        margin-top: 112px;
-        display: flex;
-        align-items: center;
+    // 支線站點地圖
+    .row:nth-child(2) {
+        margin: 7rem 0;
 
         p {
-            font-weight: bold;
             font-size: $font-size-content-h1;
+            font-weight: bold;
             writing-mode: vertical-rl;
-            letter-spacing: 10px;
+            letter-spacing: 0.625rem;
             position: absolute;
         }
     }
 }
 
 .section2 {
-    min-height: 100%;
-    padding: 100px 0;
-    text-align: center;
+    min-height: 100vh;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
 
     // 滿版內文
     .text-main-cotent {
-        margin-top: 40px;
-        letter-spacing: 7px;
-        line-height: 1.6em;
+        margin-top: 2.5rem;
+        letter-spacing: 0.4375rem;
+        line-height: 3.15rem;
     }
 
     // 公里數
-    .img-main-km {
-        margin-top: 150px;
-        max-width: 445px;
-        width: 100%;
-        max-height: 105px;
+    .row:nth-child(3) {
+        margin-top: 9.375rem;
     }
 
     // 路線圖(含起迄站牌)
     .img-main-line {
-        margin-top: 133px;
+        margin-top: 8.125rem;
         position: absolute;
         z-index: 1;
-        // max-width: 1110px;
-        // width: 100%;
-        // min-height: 140px;
-        // height: 100%;
-        // background-image: url('../img/Shal/main-Shal-line.png');
-        // background-position: bottom;
-        // background-repeat: no-repeat;
     }
 
     // 火車圖片
     .img-main-train {
-        margin-top: 114px;
-        // max-width: 850px;
-        // width: 100%;
-        // max-height: 130px;
+        margin-top: 6.9375rem;
         position: absolute;
         z-index: 2;
+        margin-left: 8.13rem;
+        margin-right: 8.13rem;
     }
 }
 
 // 背景圖片: 白天藍雲
 .img-main-bgi {
-    max-width: 1920px;
-    // width: 1920px;
-    height: 1080px;
     background-image: url('../img/main/main-bgi.png');
-    background-position: bottom;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .section6 {
-    min-height: 50vh;
-    padding: 150px 0 100px 0;
-    text-align: center;
+    padding: 9.375rem 0 6.25rem 0;
 
     .img-main-btn img {
         border-radius: 21px;
@@ -205,18 +180,16 @@ span {
 }
 
 footer {
-    min-height: 200px;
-    padding: 90px 0;
     background-color: $navbar-color;
-    color: rgba($color: #fff, $alpha: 0.7);
     font-size: $font-size-content-m;
+    color: rgba($color: #fff, $alpha: 0.7);
 
     div {
-        padding: 15px;
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
 
         p {
-            margin-bottom: 0;
-            letter-spacing: 5px;
+            letter-spacing: 0.3rem;
         }
     }
 }
