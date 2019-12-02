@@ -160,7 +160,7 @@ function showTime() {
         '0' + today.getMinutes() :
         today.getMinutes();
 
-    $('.localtime')[0].innerHTML = `<p class="my-0">${hour} ${min}</p>`;
+    $('.localtime')[0].innerHTML = `<p class="my-0">${hour}:${min}</p>`;
 }
 window.onload = function () {
     setInterval(showTime, 1000);

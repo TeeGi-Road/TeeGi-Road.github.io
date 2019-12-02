@@ -58,10 +58,20 @@ span {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
 
+    .row:nth-child(1)::before {
+        content: '';
+        height: 100px;
+    }
+
     // 電子看板
     .img-main-digibar {
+        display: flex;
         position: absolute;
         z-index: 1;
+    }
+
+    .col-3>div.img-main-digibar {
+        right: 16px;
     }
 
     // 跑馬燈
@@ -76,8 +86,10 @@ span {
 
     // 當地天氣
     .localweather {
-        padding: 0.597rem 0.469rem;
+        padding: 0.597rem 0.75rem;
+        position: absolute;
         z-index: 3;
+        left: -6px;
     }
 
     // 當地時間
@@ -86,9 +98,12 @@ span {
         font-size: $font-size-content-time;
         color: $time-color;
         letter-spacing: 0.1rem;
-        padding: 0 0.66rem;
+        // padding: 0 1.8rem;
         align-self: center;
+        position: absolute;
         z-index: 3;
+        top: 16px;
+        right: 50px;
     }
 
     // 支線站點地圖
@@ -199,24 +214,26 @@ footer {
 }
 
 // @media (max-width: 1199.98px)
-    .dropdown-menu {
-        width: 100vw;
-        background-color: rgba($color: $navbar-color, $alpha: 0.9);
-        top: 95%;
-        left: unset;
-        right: 0;
-        border: unset;
-        border-radius: unset;
+.dropdown-menu {
+    width: 100vw;
+    background-color: rgba($color: $navbar-color, $alpha: 0.9);
+    top: 95%;
+    left: unset;
+    right: 0;
+    border: unset;
+    border-radius: unset;
 
-        .dropdown-item {
-            background-color: transparent;
-            display: block;
-            clear: both;
-            text-align: inherit;
-            white-space: pre-wrap;
+    .dropdown-item {
+        background-color: transparent;
+        display: block;
+        clear: both;
+        text-align: inherit;
+        white-space: pre-wrap;
 
-            li {
-                display: inline-block;
-            }
+        li {
+            display: inline-block;
         }
     }
+}
+
+@media (max-width: 1199.98px) {}

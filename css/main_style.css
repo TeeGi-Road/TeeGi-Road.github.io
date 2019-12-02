@@ -35,9 +35,21 @@ span {
   padding-bottom: 6.25rem;
 }
 
+.section1 .row:nth-child(1)::before {
+  content: '';
+  height: 100px;
+}
+
 .section1 .img-main-digibar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   z-index: 1;
+}
+
+.section1 .col-3 > div.img-main-digibar {
+  right: 16px;
 }
 
 .section1 .marquee {
@@ -50,8 +62,10 @@ span {
 }
 
 .section1 .localweather {
-  padding: 0.597rem 0.469rem;
+  padding: 0.597rem 0.75rem;
+  position: absolute;
   z-index: 3;
+  left: -6px;
 }
 
 .section1 .localtime {
@@ -59,11 +73,13 @@ span {
   font-size: 2.875rem;
   color: #FFC10E;
   letter-spacing: 0.1rem;
-  padding: 0 0.66rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  position: absolute;
   z-index: 3;
+  top: 16px;
+  right: 50px;
 }
 
 .section1 .row:nth-child(2) {
