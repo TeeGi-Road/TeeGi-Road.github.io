@@ -33,6 +33,10 @@ nav {
 
     a {
         letter-spacing: 0.6rem;
+
+        img {
+            height: 40px;
+        }
     }
 
     a:hover {
@@ -193,3 +197,26 @@ footer {
         }
     }
 }
+
+// @media (max-width: 1199.98px)
+    .dropdown-menu {
+        width: 100vw;
+        background-color: rgba($color: $navbar-color, $alpha: 0.9);
+        top: 95%;
+        left: unset;
+        right: 0;
+        border: unset;
+        border-radius: unset;
+
+        .dropdown-item {
+            background-color: transparent;
+            display: block;
+            clear: both;
+            text-align: inherit;
+            white-space: pre-wrap;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }

@@ -10,8 +10,9 @@
 .img-index-bgi {
   min-height: 100vh;
   background-image: url("../img/index/index-bgi.jpg");
-  background-position: center -1px;
+  background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .index1 {
@@ -20,22 +21,13 @@
   padding-bottom: 6.25rem;
 }
 
-.index1 .img-index-logo {
-  width: 540px;
-  height: 236px;
-  border: 2px solid #4D4D4D;
-  font-family: "Noto Sans TC", sans-serif;
-  font-size: 5em;
-  color: #fff;
-  text-shadow: 1px 1px 5px #000;
-}
-
 .index1 .row:nth-child(1) {
   margin-top: 6.25rem;
 }
 
 .index1 .row:nth-child(2) {
   margin-top: 2.5rem;
+  margin-bottom: 8.75rem;
 }
 
 .index1 p {
@@ -47,13 +39,12 @@
 }
 
 .index1 .img-index-mg {
-  margin-top: 8.75rem;
   position: absolute;
   z-index: 1;
 }
 
 .index1 .marquee {
-  margin-top: 9.0625rem;
+  margin-top: 0.3125rem;
   width: 740px;
   position: absolute;
   left: 31px;

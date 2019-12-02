@@ -168,16 +168,44 @@ window.onload = function () {
 }
 
 // 滑鼠移入移出換圖
-$('.img-main-btn img').mouseenter(function () {
-    // 滑鼠移入後, 取得原始src字串
-    // 用'.'split成3段
-    // 加上'h.'後set新src給img
-    var imgsrc = $(this).attr('src');
-    var imgsrcSplit = imgsrc.split('.');
-    $(this).attr('src', "." + imgsrcSplit[1] + "h." + imgsrcSplit[2]);
+$(document).ready(function () {
+    $('.img-main-btn img').mouseenter(function () {
+        // 滑鼠移入後, 取得原始src字串
+        // 用'.'split成3段
+        // 加上'h.'後set新src給img
+        var imgsrc = $(this).attr('src');
+        var imgsrcSplit = imgsrc.split('.');
+        $(this).attr('src', "." + imgsrcSplit[1] + "h." + imgsrcSplit[2]);
 
-    // 滑鼠移出後, set原始src給img
-    $(this).mouseleave(function () {
-        $(this).attr('src', imgsrc);
+        // 滑鼠移出後, set原始src給img
+        $(this).mouseleave(function () {
+            $(this).attr('src', imgsrc);
+        });
     });
 });
+
+// 改變瀏覽器寬度時 add/remove class
+function windowSize() {
+    if ($(window).width() < 1200) {
+        $('.navbar .container button').attr('data-toggle', 'dropdown');
+        $('.navbar .container button').attr('aria-haspopup', 'true');
+        $('.navbar .container button').attr('data-target', '');
+        $('.navbar .container button').attr('aria-controls', '');
+        $('.navbar .container button').attr('aria-label', '');
+        $('.navbar .container div').addClass('dropdown-menu');
+        $('.navbar .container div ul').addClass('dropdown-item');
+
+    } else {
+        $('.navbar .container button').attr('data-toggle', 'collapse');
+        $('.navbar .container button').attr('aria-haspopup', '');
+        $('.navbar .container button').attr('data-target', '#navbarSupportedContent');
+        $('.navbar .container button').attr('aria-controls', 'navbarSupportedContent');
+        $('.navbar .container button').attr('aria-label', 'Toggle navigation');
+        $('.navbar .container div').removeClass('dropdown-menu');
+        $('.navbar .container div ul').removeClass('dropdown-item');
+    }
+};
+$(window).resize(function () {
+    windowSize();
+});
+windowSize();

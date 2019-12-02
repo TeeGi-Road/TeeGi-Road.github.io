@@ -34,8 +34,9 @@ monospace;
 .img-index-bgi {
     min-height: 100vh;
     background-image: url('../img/index/index-bgi.jpg');
-    background-position: center -1px;
+    background-position: center top;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .index1 {
@@ -43,23 +44,13 @@ monospace;
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
 
-    .img-index-logo {
-        width: 540px;
-        height: 236px;
-        // background-color: $time-color;
-        border: 2px solid $navbar-color;
-        font-family: $web-font;
-        font-size: 5em;
-        color: #fff;
-        text-shadow: 1px 1px 5px #000;
-    }
-
     .row:nth-child(1) {
         margin-top: 6.25rem;
     }
 
     .row:nth-child(2) {
         margin-top: 2.5rem;
+        margin-bottom: 8.75rem;
     }
 
     p {
@@ -71,13 +62,14 @@ monospace;
     }
 
     .img-index-mg {
-        margin-top: 8.75rem;
+        // margin-top: 8.75rem;
         position: absolute;
         z-index: 1;
     }
 
     .marquee {
-        margin-top: 9.0625rem;
+        // margin-top: 9.0625rem;
+        margin-top: 0.3125rem;
         width: 740px;
         position: absolute;
         left: 31px;

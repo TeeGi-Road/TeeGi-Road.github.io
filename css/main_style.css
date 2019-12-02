@@ -13,6 +13,10 @@ nav a {
   letter-spacing: 0.6rem;
 }
 
+nav a img {
+  height: 40px;
+}
+
 nav a:hover {
   color: #FFC10E !important;
 }
@@ -159,5 +163,27 @@ footer div {
 
 footer div p {
   letter-spacing: 0.3rem;
+}
+
+.dropdown-menu {
+  width: 100vw;
+  background-color: rgba(77, 77, 77, 0.9);
+  top: 95%;
+  left: unset;
+  right: 0;
+  border: unset;
+  border-radius: unset;
+}
+
+.dropdown-menu .dropdown-item {
+  background-color: transparent;
+  display: block;
+  clear: both;
+  text-align: inherit;
+  white-space: pre-wrap;
+}
+
+.dropdown-menu .dropdown-item li {
+  display: inline-block;
 }
 /*# sourceMappingURL=main_style.css.map */
