@@ -21,239 +21,190 @@ sans-serif;
 $web-font-1: 'Share Tech Mono',
 monospace;
 
-
-.section2 {
-  min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
-
-  // 單行標題: 內灣支旅
-  .img-main-Shal-title {
-    max-width: 350px;
-    height: 80px;
-    background-image: url("../Neiw-img/main-Neiw-title.png");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  // 滿版內文
-  .text-main-Neiw-cotent {
-    margin-top: 40px;
-    letter-spacing: 7px;
-    line-height: 1.6em;
-  }
-
-  // 公里數
-  .img-main-Shal-km {
-    margin-top: 150px;
-    max-width: 445px;
-    height: 105px;
-  }
-
-  // 路線圖(含起迄站牌)
-  .img-main-Shal-line {
-    margin-top: 133px;
-    max-width: 1110px;
-    height: 140px;
-    background-image: url("../img/main-Shal-line.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-  }
-
-  // 火車圖片
-  .img-main-Shal-train {
-    margin-top: -19px;
-    max-width: 850px;
-    height: 130px;
-  }
-}
-
-// 背景圖片: 白天藍雲
-.img-main-Shal-bgi {
-  max-width: 1920px;
-  height: 1080px;
-  padding: 0;
-  background-image: url("../img/main-Shal-bgi.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+// 版型F
 .section3 {
   min-height: 100vh;
-  padding: 100px 0;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 
-  // 滿版圖片
-  .img-Neiw-hex01 {
-    width: 1920px;
-    height: 700px;
-    border-radius: 5px;
-    background-image: url("../img/Neiw/Neiw-hex01.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .row:nth-child(2) {
+    margin-top: 4.63vh;
   }
 
-  // 合興標題
-  .Neiw-hex-title {
-    margin-top: 100px;
-    .img1 {
-      margin-bottom: 10px;
+  .row:nth-child(3) {
+    margin-top: 50vh;
+
+    p {
+      font-size: $font-size-content-m;
+      letter-spacing: 0.21rem;
     }
   }
-  // 滿版內文
-  .text-Neiw-hex01 {
-    margin-top: 75px;
-    letter-spacing: 7px;
-    line-height: 1.6em;
-  }
+
 }
 
+.img-Neiw-hex01 {
+  background-image: url('../img/Neiw/Neiw-hex01.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+// 版型G
 .section4 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
-  display: flex;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 
-  .img1 {
-    width: 20%;
-    opacity: 0.4;
+  .col::before {
+    content: url('../img/Neiw/Neiw-hex02-3.jpg');
+    max-width: 390px;
+    position: absolute;
+    right: 1140px;
+    opacity: 0.3;
   }
 
-  .img2 {
-    width: 60%;
-    padding: 0 30px;
-  }
-
-  .img3 {
-    width: 20%;
-    opacity: 0.4;
+  .col::after {
+    content: url('../img/Neiw/Neiw-hex02-2.jpg');
+    max-width: 390px;
+    position: absolute;
+    top: 0;
+    left: 1140px;
+    opacity: 0.3;
   }
 }
 
+// 版型C-1
 .section5 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 
-  .img1 {
-    margin-bottom: 35px;
-  }
-
-  .img2 {
-    margin-top: 60px;
+  // 4欄位兩行標題
+  .col-4>div:nth-child(2) {
+    margin-top: 3.71vh;
   }
 
   // 6欄位內文
-  .text-Neiw-cjcu01 {
-    letter-spacing: 6px;
-    line-height: 1.6em;
+  p {
+    letter-spacing: 0.4rem;
+    line-height: 3.15rem;
   }
 }
+
+.img-Neiw-firefly01 {
+  background-image: url('../img/Neiw/Neiw-firefly01.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+// 版型H
 .section6 {
-  .row {
-    padding-bottom: 95px;
-    .img {
-      padding-left: 0;
-    }
-    // 6欄位內文
-    .text-Neiw-firefly01 {
-      letter-spacing: 6px;
-      line-height: 1.6em;
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
+
+  .row:nth-child(1) {
+    p {
+      letter-spacing: 0.4rem;
+      line-height: 3.15rem;
     }
   }
+
+  .row:nth-child(2) {
+    margin-top: 8.8vh;
+  }
 }
+
+// 版型C-2
 .section7 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
-  .row {
-    margin-bottom: 40px;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
+
+  // 4欄位兩行標題
+  .col-4>div:nth-child(2) {
+    margin-top: 3.71vh;
   }
-  .img1 {
-    margin-bottom: 40px;
-  }
-  p {
-    margin-bottom:0;
-  }
+
   // 6欄位內文
-  .text-Neiw-oldstr01 {
-    letter-spacing: 6px;
-    line-height: 1.6em;
+  p {
+    letter-spacing: 0.4rem;
+    line-height: 3.15rem;
+  }
+
+  // 滿版圖片
+  .row:nth-child(2) {
+    margin-top: 7.41vh;
   }
 }
 
-// 5張圖
+// 版型I
 .section8 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
-  .row {
-    margin: 0;
-  }
-  .img1 {
-    padding-bottom: 40px;
-  }
-}
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 
-.section9 {
-  min-height: 50vh;
-  padding: 150px 0 100px 0;
-  text-align: center;
-
-  .img-main-btn-Shal {
-    max-width: 255px;
-    height: 360px;
-    border-radius: 20px;
-    background-image: url("../img/main-btn-Shal.png");
-    background-position: center;
-    background-repeat: no-repeat;
+  .row:nth-child(2) {
+    margin-top: 5.56vh;
   }
 }
 
 
+// 待調整
 @media (max-width: 320px) {
   body {
     font-size: 12px;
   }
+
   .section1 {
     padding: 10% 0 15% 0;
   }
+
   .section2 {
     padding: 0 0 15% 0;
+
     .text-main-Neiw-cotent {
       margin-top: 10%;
+
       p {
         margin-bottom: 0;
       }
     }
   }
+
   .section3 {
     padding: 0;
+
     .img-Neiw-hex01 {
       width: 320px;
+
       .container {
         padding: 0;
+
         .Neiw-hex-title {
           margin: 0;
+
           .col-4 {
             max-width: unset;
           }
+
           .mini1 {
             width: 451px;
             height: 81px;
             // transform: scale(0.34, 0.34);
             display: flex;
             align-items: flex-end;
+
             .img1 {
               margin-bottom: 0;
               width: 34%;
             }
           }
+
           .mini2 {
             width: 151px;
             height: 81px;
           }
+
           .img2 {
             width: 60%;
             margin-top: 5%;
@@ -261,19 +212,24 @@ monospace;
         }
       }
     }
+
     .container {
       padding: 0;
+
       .text-Neiw-hex01 {
         margin-top: 5%;
+
         p {
           margin-bottom: 0;
         }
       }
     }
   }
+
   .section4 {
     padding: 15% 0 0 0;
   }
+
   .section5 {
     min-height: 100vh;
     padding: 0 0 15% 0;
@@ -285,14 +241,17 @@ monospace;
       display: flex;
       align-items: flex-end;
     }
+
     .img1 {
       width: 34%;
       margin-bottom: 5%;
     }
+
     .mini2 {
       width: 351px;
       height: 106px;
     }
+
     .img2 {
       margin-top: 0;
       width: 34%;
@@ -303,104 +262,112 @@ monospace;
       letter-spacing: 6px;
       line-height: 1.6em;
     }
+
     p {
       margin-bottom: 0;
     }
+
     .img2 {
       margin: 5% 0 0 0;
     }
   }
+
   .section6 {
     .row {
       padding-bottom: 5%;
+
       .mini {
         width: 446px;
         height: 421px;
       }
+
       .img {
         width: 34%;
       }
+
       // 6欄位內文
       .text-Neiw-firefly01 {
         letter-spacing: 6px;
         line-height: 1.6em;
       }
     }
+
     p {
       margin-bottom: 0;
     }
   }
+
   .section7 {
     min-height: unset;
     padding: 15% 0;
-    .mini1{
+
+    .mini1 {
       width: 351px;
-      height:106px;
-      display:flex;
+      height: 106px;
+      display: flex;
       align-items: flex-end;
     }
-    .col-2{
-      padding:0;
+
+    .col-2 {
+      padding: 0;
     }
+
     .img1 {
       margin-bottom: 5%;
-      width:34%;
+      width: 34%;
     }
-    .mini2{
+
+    .mini2 {
       width: 351px;
-      height:106px;
-      display:flex;
+      height: 106px;
+      display: flex;
       align-items: flex-start;
-      img{
+
+      img {
         margin-bottom: 5%;
-        width:34%;
+        width: 34%;
       }
     }
-    .img2{
-      width:320px;
+
+    .img2 {
+      width: 320px;
     }
-    .col-2{
+
+    .col-2 {
       width: 0 !important;
       height: 0;
     }
-    .col{
+
+    .col {
       padding: 0;
     }
-    p{
-      padding-left:30px ;
+
+    p {
+      padding-left: 30px;
     }
   }
+
   .section8 {
     padding: 0 0 15% 0;
     min-height: unset;
     text-align: center;
+
     .row {
       margin: 0;
     }
-    .img1{
-      width:290px;
+
+    .img1 {
+      width: 290px;
     }
-    .col-3{
-      img{
-        width:61.25px ;
+
+    .col-3 {
+      img {
+        width: 61.25px;
       }
     }
   }
+
   .section9 {
     padding: 5% 0 10% 0;
-  }
-}
-footer {
-  padding: 2.5% 0;
-  div {
-    height: 12.5%;
-  }
-  .container {
-    padding: 0 10%;
-  }
-  p {
-    margin-bottom: 0;
-    letter-spacing: 5px;
-    font-size: 10px;
   }
 }

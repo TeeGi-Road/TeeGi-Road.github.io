@@ -1,55 +1,90 @@
-.top-left {
-    padding-top: 100px;
+$navbar-color: #4D4D4D;
+$sub-color: #FF7E1E;
+$time-color: #FFC10E;
+
+// 支線路線image顏色
+$Neiw-color: #D63428;
+$Liuj-color: #FF7E1E;
+$Jiji-color: #FFC10E;
+$Shal-color: #5EC324;
+$Shen-color: #0071BC;
+$Ping-color: #93278F;
+
+$font-size-content-m: 1rem; // 16px
+$font-size-content-l: 1.8125rem; // 29px
+$font-size-content-time: 2.875rem; // 46px
+$font-size-content-h2: 2.9375rem; // 47px
+$font-size-content-h1: 4.75rem; // 76px
+
+$web-font: 'Noto Sans TC',
+sans-serif;
+$web-font-1: 'Share Tech Mono',
+monospace;
+
+// 版型A
+.section3 {
+    min-height: 100vh;
+    padding-top: 9.26vh;
+    padding-bottom: 9.26vh;
+
+    // 滿版圖片
+    .row:nth-child(2) {
+        margin-top: 6.95vh;
+    }
+
+    // 滿版內文
+    .text-Liuj-hakka01 {
+        margin-top: 6.95vh;
+        letter-spacing: 0.4rem;
+        line-height: 3.15rem;
+    }
 }
 
-.top-right {
-    padding-top: 100px;
-    font-size: 29px;
+// 版型D
+.section4 {
+    min-height: 100vh;
+    padding-top: 9.26vh;
+    padding-bottom: 9.26vh;
+
+    .col-5 div:nth-child(2) {
+        margin-top: 3.71vh;
+
+        p {
+            letter-spacing: 0.4rem;
+            line-height: 3.15rem;
+        }
+    }
 }
 
-.center-1 {
-    padding-top: 80px;
-}
+// 版型G
+.section5 {
+    min-height: 100vh;
+    padding-top: 9.26vh;
+    padding-bottom: 9.26vh;
+  
+    .col::before {
+      content: url('../img/Liuj/Liuj-hakka03-2.jpg');
+      max-width: 390px;
+      position: absolute;
+      right: 1140px;
+      opacity: 0.3;
+      overflow: hidden;
+    }
+  
+    .col::after {
+      content: url('../img/Liuj/Liuj-hakka03-3.jpg');
+      max-width: 390px;
+      position: absolute;
+      top: 0;
+      left: 1140px;
+      opacity: 0.3;
+      overflow: hidden;
+    }
+  }
 
-.center-2 {
-    padding-bottom: 85px;
-    padding-top: 100px;
-    font-size: 29px;
-}
 
-.center-3 {
-    padding-bottom: 100px;
-}
 
-.center-4 {
-    padding-top: 75px;
-    padding-bottom: 75px;
-}
-
-.center-5 {
-    padding-bottom: 100px;
-    font-size: 29px;
-}
-
-.center-6 {
-    padding-top: 85px;
-    padding-bottom: 100px;
-    font-size: 29px;
-}
-
-.center-7 {
-    padding-top: 40px;
-    font-size: 29px;
-}
-
-.center-8 {
-    padding-top: 117px;
-}
-
-.center-9 {
-    padding-bottom: 100px;
-}
-
+// 待調整
 @media(max-width:414px) {
     .top-left {
         width: 95%;

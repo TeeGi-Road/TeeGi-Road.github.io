@@ -31,8 +31,8 @@ span {
 
 .section1 {
   min-height: 100vh;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
 .section1 .row:nth-child(1)::before {
@@ -83,7 +83,7 @@ span {
 }
 
 .section1 .row:nth-child(2) {
-  margin: 7rem 0;
+  margin: 10.32vh 0;
 }
 
 .section1 .row:nth-child(2) p {
@@ -98,31 +98,22 @@ span {
 
 .section2 {
   min-height: 100vh;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
 .section2 .text-main-cotent {
-  margin-top: 2.5rem;
+  margin-top: 3.71vh;
   letter-spacing: 0.4375rem;
   line-height: 3.15rem;
 }
 
 .section2 .row:nth-child(3) {
-  margin-top: 13%;
+  margin-top: 13.89vh;
 }
 
-.section2 .img-main-line {
-  position: absolute;
-  z-index: 1;
-}
-
-.section2 .img-main-train {
-  margin-top: 6.9375rem;
-  position: absolute;
-  z-index: 2;
-  margin-left: 8.13rem;
-  margin-right: 8.13rem;
+.section2 .row:nth-child(4) {
+  margin-top: 12.04vh;
 }
 
 .img-main-bgi {
@@ -131,11 +122,11 @@ span {
   background-repeat: no-repeat;
 }
 
-.section6 {
-  padding: 9.375rem 0 6.25rem 0;
+.nextTrip {
+  padding: 13.89vh 0 9.26vh 0;
 }
 
-.section6 .img-main-btn img {
+.nextTrip .img-main-btn img {
   border-radius: 21px;
 }
 

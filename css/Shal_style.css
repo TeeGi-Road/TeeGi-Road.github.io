@@ -1,23 +1,23 @@
 .section3 {
   min-height: 100vh;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
 .section3 .row:nth-child(2) {
-  margin-top: 4.6875rem;
+  margin-top: 6.95vh;
 }
 
 .section3 .text-Shal-chime01 {
-  margin-top: 4.6875rem;
+  margin-top: 6.95vh;
   letter-spacing: 0.4rem;
   line-height: 3.15rem;
 }
 
 .section4 {
   min-height: 100vh;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
 .section4 img {
@@ -39,12 +39,12 @@
 
 .section5 {
   min-height: 100vh;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
 .section5 .col-4 > div:nth-child(2) {
-  margin-top: 2.5rem;
+  margin-top: 3.71vh;
 }
 
 .section5 p {
@@ -53,6 +53,6 @@
 }
 
 .section5 .row:nth-child(2) {
-  margin-top: 5rem;
+  margin-top: 7.41vh;
 }
 /*# sourceMappingURL=Shal_style.css.map */

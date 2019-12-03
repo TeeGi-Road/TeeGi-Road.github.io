@@ -1,53 +1,57 @@
-.top-left {
-  padding-top: 100px;
+.section3 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
-.top-right {
-  padding-top: 100px;
-  font-size: 29px;
+.section3 .row:nth-child(2) {
+  margin-top: 6.95vh;
 }
 
-.center-1 {
-  padding-top: 80px;
+.section3 .text-Liuj-hakka01 {
+  margin-top: 6.95vh;
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
-.center-2 {
-  padding-bottom: 85px;
-  padding-top: 100px;
-  font-size: 29px;
+.section4 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
-.center-3 {
-  padding-bottom: 100px;
+.section4 .col-5 div:nth-child(2) {
+  margin-top: 3.71vh;
 }
 
-.center-4 {
-  padding-top: 75px;
-  padding-bottom: 75px;
+.section4 .col-5 div:nth-child(2) p {
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
-.center-5 {
-  padding-bottom: 100px;
-  font-size: 29px;
+.section5 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
-.center-6 {
-  padding-top: 85px;
-  padding-bottom: 100px;
-  font-size: 29px;
+.section5 .col::before {
+  content: url("../img/Liuj/Liuj-hakka03-2.jpg");
+  max-width: 390px;
+  position: absolute;
+  right: 1140px;
+  opacity: 0.3;
+  overflow: hidden;
 }
 
-.center-7 {
-  padding-top: 40px;
-  font-size: 29px;
-}
-
-.center-8 {
-  padding-top: 117px;
-}
-
-.center-9 {
-  padding-bottom: 100px;
+.section5 .col::after {
+  content: url("../img/Liuj/Liuj-hakka03-3.jpg");
+  max-width: 390px;
+  position: absolute;
+  top: 0;
+  left: 1140px;
+  opacity: 0.3;
+  overflow: hidden;
 }
 
 @media (max-width: 414px) {

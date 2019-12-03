@@ -55,9 +55,10 @@ span {
 
 .section1 {
     min-height: 100vh;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+    padding-top: 9.26vh;
+    padding-bottom: 9.26vh;
 
+    // 電子看板垂直置中
     .row:nth-child(1)::before {
         content: '';
         height: 100px;
@@ -70,6 +71,7 @@ span {
         z-index: 1;
     }
 
+    // 天氣+時間向左移動
     .col-3>div.img-main-digibar {
         right: 16px;
     }
@@ -108,7 +110,7 @@ span {
 
     // 支線站點地圖
     .row:nth-child(2) {
-        margin: 7rem 0;
+        margin: 10.32vh 0;
 
         p {
             font-size: $font-size-content-h1;
@@ -122,40 +124,24 @@ span {
 
 .section2 {
     min-height: 100vh;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+    padding-top: 9.26vh;
+    padding-bottom: 9.26vh;
 
-    // 滿版內文
+    // 各支線滿版內文
     .text-main-cotent {
-        margin-top: 2.5rem;
+        margin-top: 3.71vh;
         letter-spacing: 0.4375rem;
         line-height: 3.15rem;
     }
 
-    // 公里數
+    // 各支線公里數
     .row:nth-child(3) {
-        // margin-top: 9.375rem;
-        margin-top: 13%;
+        margin-top: 13.89vh;
     }
 
-    // .row:nth-child(4) {
-    //     bottom: 0;
-    // }
-
-    // 路線圖(含起迄站牌)
-    .img-main-line {
-        // margin-top: 8.125rem;
-        position: absolute;
-        z-index: 1;
-    }
-
-    // 火車圖片
-    .img-main-train {
-        margin-top: 6.9375rem;
-        position: absolute;
-        z-index: 2;
-        margin-left: 8.13rem;
-        margin-right: 8.13rem;
+    // 各支線火車路線圖(含起迄站牌)
+    .row:nth-child(4) {
+        margin-top: 12.04vh;
     }
 }
 
@@ -166,8 +152,8 @@ span {
     background-repeat: no-repeat;
 }
 
-.section6 {
-    padding: 9.375rem 0 6.25rem 0;
+.nextTrip {
+    padding: 13.89vh 0 9.26vh 0;
 
     .img-main-btn img {
         border-radius: 21px;
