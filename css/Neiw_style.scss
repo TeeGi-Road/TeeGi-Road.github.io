@@ -1,0 +1,406 @@
+$navbar-color: #4D4D4D;
+$sub-color: #FF7E1E;
+$time-color: #FFC10E;
+
+// 支線路線image顏色
+$Neiw-color: #D63428;
+$Liuj-color: #FF7E1E;
+$Jiji-color: #FFC10E;
+$Shal-color: #5EC324;
+$Shen-color: #0071BC;
+$Ping-color: #93278F;
+
+$font-size-content-m: 1rem; // 16px
+$font-size-content-l: 1.8125rem; // 29px
+$font-size-content-time: 2.875rem; // 46px
+$font-size-content-h2: 2.9375rem; // 47px
+$font-size-content-h1: 4.75rem; // 76px
+
+$web-font: 'Noto Sans TC',
+sans-serif;
+$web-font-1: 'Share Tech Mono',
+monospace;
+
+
+.section2 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+
+  // 單行標題: 內灣支旅
+  .img-main-Shal-title {
+    max-width: 350px;
+    height: 80px;
+    background-image: url("../Neiw-img/main-Neiw-title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  // 滿版內文
+  .text-main-Neiw-cotent {
+    margin-top: 40px;
+    letter-spacing: 7px;
+    line-height: 1.6em;
+  }
+
+  // 公里數
+  .img-main-Shal-km {
+    margin-top: 150px;
+    max-width: 445px;
+    height: 105px;
+  }
+
+  // 路線圖(含起迄站牌)
+  .img-main-Shal-line {
+    margin-top: 133px;
+    max-width: 1110px;
+    height: 140px;
+    background-image: url("../img/main-Shal-line.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  // 火車圖片
+  .img-main-Shal-train {
+    margin-top: -19px;
+    max-width: 850px;
+    height: 130px;
+  }
+}
+
+// 背景圖片: 白天藍雲
+.img-main-Shal-bgi {
+  max-width: 1920px;
+  height: 1080px;
+  padding: 0;
+  background-image: url("../img/main-Shal-bgi.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 {
+  min-height: 100vh;
+  padding: 100px 0;
+
+  // 滿版圖片
+  .img-Neiw-hex01 {
+    width: 1920px;
+    height: 700px;
+    border-radius: 5px;
+    background-image: url("../img/Neiw/Neiw-hex01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // 合興標題
+  .Neiw-hex-title {
+    margin-top: 100px;
+    .img1 {
+      margin-bottom: 10px;
+    }
+  }
+  // 滿版內文
+  .text-Neiw-hex01 {
+    margin-top: 75px;
+    letter-spacing: 7px;
+    line-height: 1.6em;
+  }
+}
+
+.section4 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+
+  .img1 {
+    width: 20%;
+    opacity: 0.4;
+  }
+
+  .img2 {
+    width: 60%;
+    padding: 0 30px;
+  }
+
+  .img3 {
+    width: 20%;
+    opacity: 0.4;
+  }
+}
+
+.section5 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+
+  .img1 {
+    margin-bottom: 35px;
+  }
+
+  .img2 {
+    margin-top: 60px;
+  }
+
+  // 6欄位內文
+  .text-Neiw-cjcu01 {
+    letter-spacing: 6px;
+    line-height: 1.6em;
+  }
+}
+.section6 {
+  .row {
+    padding-bottom: 95px;
+    .img {
+      padding-left: 0;
+    }
+    // 6欄位內文
+    .text-Neiw-firefly01 {
+      letter-spacing: 6px;
+      line-height: 1.6em;
+    }
+  }
+}
+.section7 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  .row {
+    margin-bottom: 40px;
+  }
+  .img1 {
+    margin-bottom: 40px;
+  }
+  p {
+    margin-bottom:0;
+  }
+  // 6欄位內文
+  .text-Neiw-oldstr01 {
+    letter-spacing: 6px;
+    line-height: 1.6em;
+  }
+}
+
+// 5張圖
+.section8 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  .row {
+    margin: 0;
+  }
+  .img1 {
+    padding-bottom: 40px;
+  }
+}
+
+.section9 {
+  min-height: 50vh;
+  padding: 150px 0 100px 0;
+  text-align: center;
+
+  .img-main-btn-Shal {
+    max-width: 255px;
+    height: 360px;
+    border-radius: 20px;
+    background-image: url("../img/main-btn-Shal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  .section1 {
+    padding: 10% 0 15% 0;
+  }
+  .section2 {
+    padding: 0 0 15% 0;
+    .text-main-Neiw-cotent {
+      margin-top: 10%;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .section3 {
+    padding: 0;
+    .img-Neiw-hex01 {
+      width: 320px;
+      .container {
+        padding: 0;
+        .Neiw-hex-title {
+          margin: 0;
+          .col-4 {
+            max-width: unset;
+          }
+          .mini1 {
+            width: 451px;
+            height: 81px;
+            // transform: scale(0.34, 0.34);
+            display: flex;
+            align-items: flex-end;
+            .img1 {
+              margin-bottom: 0;
+              width: 34%;
+            }
+          }
+          .mini2 {
+            width: 151px;
+            height: 81px;
+          }
+          .img2 {
+            width: 60%;
+            margin-top: 5%;
+          }
+        }
+      }
+    }
+    .container {
+      padding: 0;
+      .text-Neiw-hex01 {
+        margin-top: 5%;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .section4 {
+    padding: 15% 0 0 0;
+  }
+  .section5 {
+    min-height: 100vh;
+    padding: 0 0 15% 0;
+    text-align: left;
+
+    .mini1 {
+      width: 351px;
+      height: 106px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .img1 {
+      width: 34%;
+      margin-bottom: 5%;
+    }
+    .mini2 {
+      width: 351px;
+      height: 106px;
+    }
+    .img2 {
+      margin-top: 0;
+      width: 34%;
+    }
+
+    // 6欄位內文
+    .text-Neiw-cjcu01 {
+      letter-spacing: 6px;
+      line-height: 1.6em;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .img2 {
+      margin: 5% 0 0 0;
+    }
+  }
+  .section6 {
+    .row {
+      padding-bottom: 5%;
+      .mini {
+        width: 446px;
+        height: 421px;
+      }
+      .img {
+        width: 34%;
+      }
+      // 6欄位內文
+      .text-Neiw-firefly01 {
+        letter-spacing: 6px;
+        line-height: 1.6em;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .section7 {
+    min-height: unset;
+    padding: 15% 0;
+    .mini1{
+      width: 351px;
+      height:106px;
+      display:flex;
+      align-items: flex-end;
+    }
+    .col-2{
+      padding:0;
+    }
+    .img1 {
+      margin-bottom: 5%;
+      width:34%;
+    }
+    .mini2{
+      width: 351px;
+      height:106px;
+      display:flex;
+      align-items: flex-start;
+      img{
+        margin-bottom: 5%;
+        width:34%;
+      }
+    }
+    .img2{
+      width:320px;
+    }
+    .col-2{
+      width: 0 !important;
+      height: 0;
+    }
+    .col{
+      padding: 0;
+    }
+    p{
+      padding-left:30px ;
+    }
+  }
+  .section8 {
+    padding: 0 0 15% 0;
+    min-height: unset;
+    text-align: center;
+    .row {
+      margin: 0;
+    }
+    .img1{
+      width:290px;
+    }
+    .col-3{
+      img{
+        width:61.25px ;
+      }
+    }
+  }
+  .section9 {
+    padding: 5% 0 10% 0;
+  }
+}
+footer {
+  padding: 2.5% 0;
+  div {
+    height: 12.5%;
+  }
+  .container {
+    padding: 0 10%;
+  }
+  p {
+    margin-bottom: 0;
+    letter-spacing: 5px;
+    font-size: 10px;
+  }
+}

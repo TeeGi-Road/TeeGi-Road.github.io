@@ -71,13 +71,13 @@ function getWeatherData(fetchUrl) {
             switch (WxCode) {
                 case '01':
                 case '24':
-                    WxImg = '../img/main/weather/clear.png';
+                    WxImg = './img/main/weather/clear.png';
                     break;
                 case '02':
                 case '03':
                 case '25':
                 case '26':
-                    WxImg = '../img/main/weather/mostClear.png';
+                    WxImg = './img/main/weather/mostClear.png';
                     break;
                 case '04':
                 case '05':
@@ -85,7 +85,7 @@ function getWeatherData(fetchUrl) {
                 case '07':
                 case '27':
                 case '28':
-                    WxImg = '../img/main/weather/cloudy.png';
+                    WxImg = './img/main/weather/cloudy.png';
                     break;
                 case '08':
                 case '11':
@@ -95,13 +95,13 @@ function getWeatherData(fetchUrl) {
                 case '21':
                 case '30':
                 case '34':
-                    WxImg = '../img/main/weather/mostClear-rainy.png';
+                    WxImg = './img/main/weather/mostClear-rainy.png';
                     break;
                 case '09':
                 case '10':
                 case '14':
                 case '22':
-                    WxImg = '../img/main/weather/afternoonRain.png';
+                    WxImg = './img/main/weather/afternoonRain.png';
                     break;
                 case '12':
                 case '13':
@@ -110,7 +110,7 @@ function getWeatherData(fetchUrl) {
                 case '32':
                 case '38':
                 case '39':
-                    WxImg = '../img/main/weather/rainy.png';
+                    WxImg = './img/main/weather/rainy.png';
                     break;
                 case '15':
                 case '16':
@@ -119,15 +119,15 @@ function getWeatherData(fetchUrl) {
                 case '35':
                 case '36':
                 case '41':
-                    WxImg = '../img/main/weather/thund.png';
+                    WxImg = './img/main/weather/thund.png';
                     break;
                 case '23':
                 case '37':
                 case '42':
-                    WxImg = '../img/main/weather/snow.png';
+                    WxImg = './img/main/weather/snow.png';
                     break;
                 default:
-                    WxImg = '../img/main/weather/clear.png';
+                    WxImg = './img/main/weather/clear.png';
                     break;
             }
 

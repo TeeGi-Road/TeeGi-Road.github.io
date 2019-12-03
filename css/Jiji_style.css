@@ -1,0 +1,279 @@
+.section2 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section2 .img-main-Jiji-title {
+  max-width: 350px;
+  height: 80px;
+  background-image: url("../img/Jiji/main-Jiji-title.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 .text-main-Jiji-cotent {
+  margin-top: 40px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section2 .img-main-Jiji-km {
+  margin-top: 150px;
+  max-width: 445px;
+  height: 105px;
+}
+
+.section2 .img-main-Jiji-line {
+  margin-top: 133px;
+  max-width: 1110px;
+  height: 140px;
+  background-image: url("../img/main-Shal-line.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.section2 .img-main-Jiji-train {
+  margin-top: -19px;
+  max-width: 850px;
+  height: 130px;
+}
+
+.img-main-Shal-bgi {
+  max-width: 1920px;
+  height: 1080px;
+  padding: 0;
+  background-image: url("../img/main-Shal-bgi.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section3 .text-Jiji-road01 {
+  margin-top: 75px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section3 .img-Jiji-road01 {
+  margin-top: 75px;
+}
+
+.section4 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section4 .img-Jiji-car01 {
+  width: 1920px;
+  height: 700px;
+  border-radius: 5px;
+  background-image: url("../img/Jiji/Jiji-car01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section4 .img-Jiji-car01 .Jiji-car-title {
+  margin-top: 100px;
+}
+
+.section4 .text-Jiji-car01 {
+  margin-top: 75px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section5 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section5 .img1 {
+  margin-bottom: 35px;
+}
+
+.section5 .img2 {
+  margin-top: 60px;
+}
+
+.section5 .img-Jiji-islandTitle01 {
+  max-width: 350px;
+  height: 105px;
+  background-image: url("../img/Jiji/Jiji-islandTitle01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5 .img-Jiji-islandTitle02 {
+  margin-top: 40px;
+  max-width: 350px;
+  height: 105px;
+  background-image: url("../img/Jiji/Jiji-islandTitle02.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5 .text-Jiji-island01 {
+  letter-spacing: 6px;
+  line-height: 1.6em;
+}
+
+.section5 .img-Jiji-island01 {
+  margin-top: 80px;
+  max-width: 1110px;
+  height: 550px;
+  border-radius: 5px;
+  background-image: url("../img/Jiji/Jiji-island01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section6 {
+  min-height: 50vh;
+  padding: 150px 0 100px 0;
+  text-align: center;
+}
+
+.section6 .img-main-btn-Shal {
+  max-width: 255px;
+  height: 360px;
+  border-radius: 20px;
+  background-image: url("../img/main-btn-Shal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+footer {
+  min-height: 200px;
+  padding: 90px 0;
+  background-color: #4D4D4D;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+footer div {
+  padding: 15px;
+}
+
+footer div p {
+  margin-bottom: 0;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  .section1 {
+    padding: 10% 0 15% 0;
+  }
+  .section2 {
+    min-height: 568px;
+    padding: 0 0 15% 0;
+  }
+  .section2 .text-main-Neiw-cotent {
+    margin-top: 10%;
+  }
+  .section2 .text-main-Neiw-cotent p {
+    margin-bottom: 0;
+  }
+  .section3 {
+    padding: 0;
+    text-align: left;
+  }
+  .section3 .custom-row-mx-15 .mini {
+    width: 401px;
+    height: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .section3 .custom-row-mx-15 .mini .img1 {
+    width: 34%;
+  }
+  .section3 .mini1 {
+    width: 151px;
+    height: 81px;
+  }
+  .section3 .mini1 .img2 {
+    margin: 5% 0;
+    width: 60%;
+    height: 60%;
+  }
+  .img-Ping-water01 {
+    margin-top: 5%;
+    max-width: 290px;
+    height: 90px;
+    border-radius: 5px;
+    background-image: url("../Ping-img/Ping-water01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .text-Ping-water01 {
+    margin: 5% 0 5% 0;
+  }
+  .text-Ping-water01 p {
+    margin-bottom: 0;
+  }
+  .section4 {
+    padding: 15% 0;
+  }
+  .section4 .title-Ping-lamp01 {
+    width: 290px;
+    margin: 0 15px;
+  }
+  .section4 p {
+    width: 290px;
+    margin: 0 15px;
+    padding: 5% 0;
+  }
+  .section4 .img1 {
+    width: 320px;
+  }
+  .section4 .col-6 {
+    height: 400px;
+  }
+  .section5 img {
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=Jiji_style.css.map */

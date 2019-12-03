@@ -1,0 +1,236 @@
+.section2 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section2 .img-main-Ping-title {
+  max-width: 350px;
+  height: 80px;
+  background-image: url("../Ping-img/main-Ping-title.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 .text-main-Ping-cotent {
+  margin-top: 40px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section2 .img-main-Ping-km {
+  margin-top: 150px;
+  max-width: 445px;
+  height: 105px;
+}
+
+.section2 .img-main-Ping-line {
+  margin-top: 133px;
+  max-width: 1110px;
+  height: 140px;
+  background-image: url("../img/main-Shal-line.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.section2 .img-main-Ping-train {
+  margin-top: -19px;
+  max-width: 850px;
+  height: 130px;
+}
+
+.img-main-Shal-bgi {
+  max-width: 1920px;
+  height: 1080px;
+  padding: 0;
+  background-image: url("../img/main-Shal-bgi.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section3 .img-Ping-water01 {
+  margin-top: 75px;
+  max-width: 1110px;
+  height: 402px;
+  border-radius: 5px;
+  background-image: url("../img/Ping/Ping-water01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section3 .mini {
+  padding-bottom: 75px;
+}
+
+.section3 .custom-row-mx-15 {
+  margin-top: 75px;
+}
+
+.section3 .text-Ping-water01 {
+  margin-top: 75px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section4 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section4 .title-Ping-lamp01 {
+  margin-bottom: 40px;
+}
+
+.section4 .text-Ping-lamp01 {
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section5 {
+  text-align: center;
+}
+
+.section6 {
+  min-height: 50vh;
+  padding: 150px 0 100px 0;
+  text-align: center;
+}
+
+.section6 .img-main-btn-Shal {
+  max-width: 255px;
+  height: 360px;
+  border-radius: 20px;
+  background-image: url("../img/main-btn-Shal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  .section1 {
+    padding: 10% 0 15% 0;
+  }
+  .section2 {
+    padding: 0 0 15% 0;
+  }
+  .section2 .text-main-Neiw-cotent {
+    margin-top: 10%;
+  }
+  .section2 .text-main-Neiw-cotent p {
+    margin-bottom: 0;
+  }
+  .section3 {
+    padding: 0;
+    text-align: left;
+    min-height: unset;
+  }
+  .section3 .custom-row-mx-15 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .section3 .custom-row-mx-15 .mini {
+    width: 636px;
+    height: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 10%;
+  }
+  .section3 .custom-row-mx-15 .mini .img1 {
+    width: 34%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section3 .mini1 {
+    width: 151px;
+    height: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .section3 .mini1 .img2 {
+    margin: 5% 0;
+    width: 60%;
+    height: 60%;
+  }
+  .img-Ping-water01 {
+    margin-top: 0;
+    max-width: 290px;
+    height: 90px;
+    border-radius: 5px;
+    background-image: url("../img/Ping/Ping-water01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .text-Ping-water01 {
+    padding-top: 5%;
+  }
+  .text-Ping-water01 p {
+    margin-bottom: 0;
+  }
+  .text-Ping-water01 .img-Ping-water01 {
+    margin-top: 75px;
+    max-width: 1110px;
+    height: 402px;
+    border-radius: 5px;
+    background-image: url("../img/Ping/Ping-water01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .section4 {
+    padding: 0;
+  }
+  .section4 .mini {
+    width: 336px;
+    height: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .section4 .title-Ping-lamp01 {
+    margin: 0 15px;
+    width: 34%;
+  }
+  .section4 p {
+    width: 290px;
+    margin: 0 15px;
+    padding: 5% 0;
+  }
+  .section4 .img1 {
+    width: 320px;
+  }
+  .section5 img {
+    padding-top: 15%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=Ping_style.css.map */

@@ -1,0 +1,80 @@
+.top-left {
+  padding-top: 100px;
+}
+
+.top-right {
+  padding-top: 100px;
+  font-size: 29px;
+}
+
+.center-1 {
+  padding-top: 80px;
+}
+
+.center-2 {
+  padding-bottom: 85px;
+  padding-top: 100px;
+  font-size: 29px;
+}
+
+.center-3 {
+  padding-bottom: 100px;
+}
+
+.center-4 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.center-5 {
+  padding-bottom: 100px;
+  font-size: 29px;
+}
+
+.center-6 {
+  padding-top: 85px;
+  padding-bottom: 100px;
+  font-size: 29px;
+}
+
+.center-7 {
+  padding-top: 40px;
+  font-size: 29px;
+}
+
+.center-8 {
+  padding-top: 117px;
+}
+
+.center-9 {
+  padding-bottom: 100px;
+}
+
+@media (max-width: 414px) {
+  .top-left {
+    width: 95%;
+    height: 80vh;
+    padding-bottom: 15px;
+  }
+  .center-1 {
+    width: 98%;
+    height: 90%;
+  }
+  .center-3 {
+    width: 98%;
+  }
+  .center-10 {
+    width: 85%;
+    padding-bottom: 20px;
+  }
+  .center-4 {
+    width: 99%;
+  }
+  .center-8 {
+    width: 90%;
+  }
+  .center-9 {
+    height: 120vh;
+  }
+}
+/*# sourceMappingURL=Liuj_style.css.map */

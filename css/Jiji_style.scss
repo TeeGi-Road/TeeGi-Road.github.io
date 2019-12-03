@@ -1,0 +1,321 @@
+$navbar-color: #4D4D4D;
+$sub-color: #FF7E1E;
+$time-color: #FFC10E;
+
+// 支線路線image顏色
+$Neiw-color: #D63428;
+$Liuj-color: #FF7E1E;
+$Jiji-color: #FFC10E;
+$Shal-color: #5EC324;
+$Shen-color: #0071BC;
+$Ping-color: #93278F;
+
+$font-size-content-m: 1rem; // 16px
+$font-size-content-l: 1.8125rem; // 29px
+$font-size-content-time: 2.875rem; // 46px
+$font-size-content-h2: 2.9375rem; // 47px
+$font-size-content-h1: 4.75rem; // 76px
+
+$web-font: 'Noto Sans TC',
+sans-serif;
+$web-font-1: 'Share Tech Mono',
+monospace;
+
+.section2 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+
+  // 單行標題:集集支旅
+  .img-main-Jiji-title {
+    max-width: 350px;
+    height: 80px;
+    background-image: url("../img/Jiji/main-Jiji-title.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  // 滿版內文
+  .text-main-Jiji-cotent {
+    margin-top: 40px;
+    letter-spacing: 7px;
+    line-height: 1.6em;
+  }
+
+  // 公里數
+  .img-main-Jiji-km {
+    margin-top: 150px;
+    max-width: 445px;
+    height: 105px;
+  }
+
+  // 路線圖(含起迄站牌)
+  .img-main-Jiji-line {
+    margin-top: 133px;
+    max-width: 1110px;
+    height: 140px;
+    background-image: url("../img/main-Shal-line.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  // 火車圖片
+  .img-main-Jiji-train {
+    margin-top: -19px;
+    max-width: 850px;
+    height: 130px;
+  }
+}
+
+// 背景圖片: 白天藍雲
+.img-main-Shal-bgi {
+  max-width: 1920px;
+  height: 1080px;
+  padding: 0;
+  background-image: url("../img/main-Shal-bgi.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+
+  // 滿版內文
+  .text-Jiji-road01 {
+    margin-top: 75px;
+    letter-spacing: 7px;
+    line-height: 1.6em;
+  }
+
+  .img-Jiji-road01 {
+    margin-top: 75px;
+  }
+}
+  .section4 {
+    min-height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+
+    //全螢幕圖
+    .img-Jiji-car01 {
+      width: 1920px;
+      height: 700px;
+      border-radius: 5px;
+      background-image: url("../img/Jiji/Jiji-car01.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      // 纜車標題
+      .Jiji-car-title {
+        margin-top: 100px;
+      }
+    }
+
+    // 滿版內文
+    .text-Jiji-car01 {
+      margin-top: 75px;
+      letter-spacing: 7px;
+      line-height: 1.6em;
+    }
+  }
+
+  .section5 {
+    min-height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+
+    .img1 {
+      margin-bottom: 35px;
+    }
+
+    .img2 {
+      margin-top: 60px;
+    }
+
+    // 4欄位單行標題
+    .img-Jiji-islandTitle01 {
+      max-width: 350px;
+      height: 105px;
+      background-image: url("../img/Jiji/Jiji-islandTitle01.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    // 4欄位兩行標題
+    .img-Jiji-islandTitle02 {
+      margin-top: 40px;
+      max-width: 350px;
+      height: 105px;
+      background-image: url("../img/Jiji/Jiji-islandTitle02.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    // 6欄位內文
+    .text-Jiji-island01 {
+      letter-spacing: 6px;
+      line-height: 1.6em;
+    }
+
+    // 滿版圖片
+    .img-Jiji-island01 {
+      margin-top: 80px;
+      max-width: 1110px;
+      height: 550px;
+      border-radius: 5px;
+      background-image: url("../img/Jiji/Jiji-island01.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .section6 {
+    min-height: 50vh;
+    padding: 150px 0 100px 0;
+    text-align: center;
+
+    .img-main-btn-Shal {
+      max-width: 255px;
+      height: 360px;
+      border-radius: 20px;
+      background-image: url("../img/main-btn-Shal.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: $font-size-content-m;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+  }
+
+  footer {
+    min-height: 200px;
+    padding: 90px 0;
+    background-color: $navbar-color;
+    color: rgba($color: #fff, $alpha: 0.7);
+    font-size: $font-size-content-m;
+
+    div {
+      padding: 15px;
+
+      p {
+        margin-bottom: 0;
+        letter-spacing: 5px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    body {
+      font-size: 12px;
+    }
+    .section1 {
+      padding: 10% 0 15% 0;
+    }
+    .section2 {
+      min-height: 568px;
+      padding: 0 0 15% 0;
+      .text-main-Neiw-cotent {
+        margin-top: 10%;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .section3 {
+      padding: 0;
+      text-align: left;
+      .custom-row-mx-15 {
+        .mini {
+          width: 401px;
+          height: 81px;
+          display: flex;
+          align-items: flex-end;
+
+          .img1 {
+            width: 34%;
+          }
+        }
+      }
+
+      .mini1 {
+        width: 151px;
+        height: 81px;
+        .img2 {
+          margin: 5% 0;
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+    // 滿版圖片
+    .img-Ping-water01 {
+      margin-top: 5%;
+      max-width: 290px;
+      height: 90px;
+      border-radius: 5px;
+      background-image: url("../Ping-img/Ping-water01.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    // 滿版內文
+    .text-Ping-water01 {
+      margin: 5% 0 5% 0;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .section4 {
+      padding: 15% 0;
+  
+      .title-Ping-lamp01 {
+        width: 290px;
+        margin: 0 15px;
+      }
+      p {
+        width: 290px;
+        margin: 0 15px;
+        padding: 5% 0;
+      }
+      .img1 {
+        width: 320px;
+      }
+      .col-6 {
+        height: 400px;
+      }
+    }
+    .section5 {
+      img {
+        height: 100vh;
+      }
+    }
+  }

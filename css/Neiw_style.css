@@ -1,0 +1,392 @@
+.section2 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section2 .img-main-Shal-title {
+  max-width: 350px;
+  height: 80px;
+  background-image: url("../Neiw-img/main-Neiw-title.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 .text-main-Neiw-cotent {
+  margin-top: 40px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section2 .img-main-Shal-km {
+  margin-top: 150px;
+  max-width: 445px;
+  height: 105px;
+}
+
+.section2 .img-main-Shal-line {
+  margin-top: 133px;
+  max-width: 1110px;
+  height: 140px;
+  background-image: url("../img/main-Shal-line.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.section2 .img-main-Shal-train {
+  margin-top: -19px;
+  max-width: 850px;
+  height: 130px;
+}
+
+.img-main-Shal-bgi {
+  max-width: 1920px;
+  height: 1080px;
+  padding: 0;
+  background-image: url("../img/main-Shal-bgi.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.section3 .img-Neiw-hex01 {
+  width: 1920px;
+  height: 700px;
+  border-radius: 5px;
+  background-image: url("../img/Neiw/Neiw-hex01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 .Neiw-hex-title {
+  margin-top: 100px;
+}
+
+.section3 .Neiw-hex-title .img1 {
+  margin-bottom: 10px;
+}
+
+.section3 .text-Neiw-hex01 {
+  margin-top: 75px;
+  letter-spacing: 7px;
+  line-height: 1.6em;
+}
+
+.section4 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section4 .img1 {
+  width: 20%;
+  opacity: 0.4;
+}
+
+.section4 .img2 {
+  width: 60%;
+  padding: 0 30px;
+}
+
+.section4 .img3 {
+  width: 20%;
+  opacity: 0.4;
+}
+
+.section5 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section5 .img1 {
+  margin-bottom: 35px;
+}
+
+.section5 .img2 {
+  margin-top: 60px;
+}
+
+.section5 .text-Neiw-cjcu01 {
+  letter-spacing: 6px;
+  line-height: 1.6em;
+}
+
+.section6 .row {
+  padding-bottom: 95px;
+}
+
+.section6 .row .img {
+  padding-left: 0;
+}
+
+.section6 .row .text-Neiw-firefly01 {
+  letter-spacing: 6px;
+  line-height: 1.6em;
+}
+
+.section7 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section7 .row {
+  margin-bottom: 40px;
+}
+
+.section7 .img1 {
+  margin-bottom: 40px;
+}
+
+.section7 p {
+  margin-bottom: 0;
+}
+
+.section7 .text-Neiw-oldstr01 {
+  letter-spacing: 6px;
+  line-height: 1.6em;
+}
+
+.section8 {
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section8 .row {
+  margin: 0;
+}
+
+.section8 .img1 {
+  padding-bottom: 40px;
+}
+
+.section9 {
+  min-height: 50vh;
+  padding: 150px 0 100px 0;
+  text-align: center;
+}
+
+.section9 .img-main-btn-Shal {
+  max-width: 255px;
+  height: 360px;
+  border-radius: 20px;
+  background-image: url("../img/main-btn-Shal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  .section1 {
+    padding: 10% 0 15% 0;
+  }
+  .section2 {
+    padding: 0 0 15% 0;
+  }
+  .section2 .text-main-Neiw-cotent {
+    margin-top: 10%;
+  }
+  .section2 .text-main-Neiw-cotent p {
+    margin-bottom: 0;
+  }
+  .section3 {
+    padding: 0;
+  }
+  .section3 .img-Neiw-hex01 {
+    width: 320px;
+  }
+  .section3 .img-Neiw-hex01 .container {
+    padding: 0;
+  }
+  .section3 .img-Neiw-hex01 .container .Neiw-hex-title {
+    margin: 0;
+  }
+  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .col-4 {
+    max-width: unset;
+  }
+  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .mini1 {
+    width: 451px;
+    height: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .mini1 .img1 {
+    margin-bottom: 0;
+    width: 34%;
+  }
+  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .mini2 {
+    width: 151px;
+    height: 81px;
+  }
+  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .img2 {
+    width: 60%;
+    margin-top: 5%;
+  }
+  .section3 .container {
+    padding: 0;
+  }
+  .section3 .container .text-Neiw-hex01 {
+    margin-top: 5%;
+  }
+  .section3 .container .text-Neiw-hex01 p {
+    margin-bottom: 0;
+  }
+  .section4 {
+    padding: 15% 0 0 0;
+  }
+  .section5 {
+    min-height: 100vh;
+    padding: 0 0 15% 0;
+    text-align: left;
+  }
+  .section5 .mini1 {
+    width: 351px;
+    height: 106px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .section5 .img1 {
+    width: 34%;
+    margin-bottom: 5%;
+  }
+  .section5 .mini2 {
+    width: 351px;
+    height: 106px;
+  }
+  .section5 .img2 {
+    margin-top: 0;
+    width: 34%;
+  }
+  .section5 .text-Neiw-cjcu01 {
+    letter-spacing: 6px;
+    line-height: 1.6em;
+  }
+  .section5 p {
+    margin-bottom: 0;
+  }
+  .section5 .img2 {
+    margin: 5% 0 0 0;
+  }
+  .section6 .row {
+    padding-bottom: 5%;
+  }
+  .section6 .row .mini {
+    width: 446px;
+    height: 421px;
+  }
+  .section6 .row .img {
+    width: 34%;
+  }
+  .section6 .row .text-Neiw-firefly01 {
+    letter-spacing: 6px;
+    line-height: 1.6em;
+  }
+  .section6 p {
+    margin-bottom: 0;
+  }
+  .section7 {
+    min-height: unset;
+    padding: 15% 0;
+  }
+  .section7 .mini1 {
+    width: 351px;
+    height: 106px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .section7 .col-2 {
+    padding: 0;
+  }
+  .section7 .img1 {
+    margin-bottom: 5%;
+    width: 34%;
+  }
+  .section7 .mini2 {
+    width: 351px;
+    height: 106px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .section7 .mini2 img {
+    margin-bottom: 5%;
+    width: 34%;
+  }
+  .section7 .img2 {
+    width: 320px;
+  }
+  .section7 .col-2 {
+    width: 0 !important;
+    height: 0;
+  }
+  .section7 .col {
+    padding: 0;
+  }
+  .section7 p {
+    padding-left: 30px;
+  }
+  .section8 {
+    padding: 0 0 15% 0;
+    min-height: unset;
+    text-align: center;
+  }
+  .section8 .row {
+    margin: 0;
+  }
+  .section8 .img1 {
+    width: 290px;
+  }
+  .section8 .col-3 img {
+    width: 61.25px;
+  }
+  .section9 {
+    padding: 5% 0 10% 0;
+  }
+}
+
+footer {
+  padding: 2.5% 0;
+}
+
+footer div {
+  height: 12.5%;
+}
+
+footer .container {
+  padding: 0 10%;
+}
+
+footer p {
+  margin-bottom: 0;
+  letter-spacing: 5px;
+  font-size: 10px;
+}
+/*# sourceMappingURL=Neiw_style.css.map */
