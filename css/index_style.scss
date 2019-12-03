@@ -57,7 +57,6 @@ monospace;
         margin-bottom: 8.75rem;
     }
 
-
     p {
         font-size: 1.25rem;
         letter-spacing: 0.55rem;
@@ -88,7 +87,7 @@ monospace;
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
 
-    .col-2 img {
+    img {
         border-radius: 1.38rem;
         box-shadow: 4px 4px 5px #aaa;
     }
@@ -119,10 +118,12 @@ monospace;
 
 @media (max-width: 1199.98px) {
     .img-index-bgi {
+        height: 100%;
         background-position-x: 80%;
     }
 
     .index1 {
+
         .row:nth-child(1) {
             .col {
                 text-align: center;
@@ -137,17 +138,19 @@ monospace;
             margin-bottom: unset;
             .col {
                 p {
-                    font-size: 0.625rem;
+                    // font-size: 0.625rem;
                     // font-size: 10px;
-                    letter-spacing: -0.02rem;
+                    letter-spacing: 0rem;
                     line-height: 1.25rem;
                 }
             }
         }
 
         .row:nth-child(3) {
+
             div:nth-child(2) div {
-                transform: scale(0.7);
+                display: none;
+                // transform: scale(0.7);
             }
         }
 

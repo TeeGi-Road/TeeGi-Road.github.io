@@ -109,11 +109,10 @@ span {
 }
 
 .section2 .row:nth-child(3) {
-  margin-top: 9.375rem;
+  margin-top: 13%;
 }
 
 .section2 .img-main-line {
-  margin-top: 8.125rem;
   position: absolute;
   z-index: 1;
 }
