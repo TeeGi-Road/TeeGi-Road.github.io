@@ -39,7 +39,6 @@ monospace;
       letter-spacing: 0.21rem;
     }
   }
-
 }
 
 .img-Neiw-hex01 {
@@ -53,6 +52,8 @@ monospace;
   min-height: 100vh;
   padding-top: 9.26vh;
   padding-bottom: 9.26vh;
+  
+
 
   .col::before {
     content: url('../img/Neiw/Neiw-hex02-3.jpg');
@@ -60,6 +61,7 @@ monospace;
     position: absolute;
     right: 1140px;
     opacity: 0.3;
+    overflow: hidden
   }
 
   .col::after {
@@ -69,6 +71,7 @@ monospace;
     top: 0;
     left: 1140px;
     opacity: 0.3;
+    overflow: hidden
   }
 }
 

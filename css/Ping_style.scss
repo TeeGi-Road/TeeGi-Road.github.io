@@ -21,135 +21,54 @@ sans-serif;
 $web-font-1: 'Share Tech Mono',
 monospace;
 
-
-.section2 {
-  min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
-
-  // 單行標題: 平溪支旅
-  .img-main-Ping-title {
-    max-width: 350px;
-    height: 80px;
-    background-image: url("../Ping-img/main-Ping-title.png");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  // 滿版內文
-  .text-main-Ping-cotent {
-    margin-top: 40px;
-    letter-spacing: 7px;
-    line-height: 1.6em;
-  }
-
-  // 公里數
-  .img-main-Ping-km {
-    margin-top: 150px;
-    max-width: 445px;
-    height: 105px;
-  }
-
-  // 路線圖(含起迄站牌)
-  .img-main-Ping-line {
-    margin-top: 133px;
-    max-width: 1110px;
-    height: 140px;
-    background-image: url("../img/main-Shal-line.png");
-    background-position: bottom;
-    background-repeat: no-repeat;
-  }
-
-  // 火車圖片
-  .img-main-Ping-train {
-    margin-top: -19px;
-    max-width: 850px;
-    height: 130px;
-  }
-}
-
-// 背景圖片: 白天藍雲
-.img-main-Shal-bgi {
-  max-width: 1920px;
-  height: 1080px;
-  padding: 0;
-  background-image: url("../img/main-Shal-bgi.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
+// 版型A
 .section3 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 
-  //滿版圖片
-  .img-Ping-water01 {
-    margin-top: 75px;
-    max-width: 1110px;
-    height: 402px;
-    border-radius: 5px;
-    background-image: url("../img/Ping/Ping-water01.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .mini {
-    padding-bottom: 75px;
-  }
-
-  .custom-row-mx-15 {
-    margin-top: 75px;
+  // 滿版圖片
+  .row:nth-child(2) {
+      margin-top: 6.95vh;
   }
 
   // 滿版內文
   .text-Ping-water01 {
-    margin-top: 75px;
-    letter-spacing: 7px;
-    line-height: 1.6em;
+      margin-top: 6.95vh;
+      letter-spacing: 0.2rem;
+      line-height: 2.6rem;
   }
 }
 
+// 版型D
 .section4 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 
-  .title-Ping-lamp01 {
-    margin-bottom: 40px;
-  }
+  .col-5 div:nth-child(2) {
+      margin-top: 3.71vh;
 
-  // 5欄內文
-  .text-Ping-lamp01 {
-    letter-spacing: 7px;
-    line-height: 1.6em;
+      p {
+          letter-spacing: 0.5rem;
+          line-height: 3.15rem;
+      }
   }
 }
 
+// 版型K
 .section5 {
-  text-align: center;
+  min-height: 100vh;
 }
-
-.section6 {
-  min-height: 50vh;
-  padding: 150px 0 100px 0;
-  text-align: center;
-
-  .img-main-btn-Shal {
-    max-width: 255px;
-    height: 360px;
-    border-radius: 20px;
-    background-image: url("../img/main-btn-Shal.png");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.img-Ping-lamp02 {
+  background-image: url('../img/Ping/Ping-lamp02.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
 
-
+// 待調整
 @media (max-width: 320px) {
   body {
     font-size: 12px;

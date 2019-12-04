@@ -1,104 +1,61 @@
 .section3 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
+}
+
+.section3 .row:nth-child(2) {
+  margin-top: 6.95vh;
 }
 
 .section3 .text-Jiji-road01 {
-  margin-top: 75px;
-  letter-spacing: 7px;
-  line-height: 1.6em;
-}
-
-.section3 .img-Jiji-road01 {
-  margin-top: 75px;
+  margin-top: 6.95vh;
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
 .section4 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
-.section4 .img-Jiji-car01 {
-  width: 1920px;
-  height: 700px;
-  border-radius: 5px;
+.section4 .row:nth-child(2) {
+  margin-top: 4.63vh;
+}
+
+.section4 .row:nth-child(3) {
+  margin-top: 38vh;
+}
+
+.section4 .row:nth-child(3) p {
+  letter-spacing: 0.4rem;
+  line-height: 3.93rem;
+}
+
+.img-Jiji-car01 {
   background-image: url("../img/Jiji/Jiji-car01.jpg");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.section4 .img-Jiji-car01 .Jiji-car-title {
-  margin-top: 100px;
-}
-
-.section4 .text-Jiji-car01 {
-  margin-top: 75px;
-  letter-spacing: 7px;
-  line-height: 1.6em;
 }
 
 .section5 {
   min-height: 100vh;
-  padding: 100px 0;
-  text-align: center;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
-.section5 .img1 {
-  margin-bottom: 35px;
+.section5 .col-4 > div:nth-child(2) {
+  margin-top: 3.71vh;
 }
 
-.section5 .img2 {
-  margin-top: 60px;
+.section5 p {
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
-.section5 .img-Jiji-islandTitle01 {
-  max-width: 350px;
-  height: 105px;
-  background-image: url("../img/Jiji/Jiji-islandTitle01.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.section5 .img-Jiji-islandTitle02 {
-  margin-top: 40px;
-  max-width: 350px;
-  height: 105px;
-  background-image: url("../img/Jiji/Jiji-islandTitle02.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.section5 .text-Jiji-island01 {
-  letter-spacing: 6px;
-  line-height: 1.6em;
-}
-
-.section5 .img-Jiji-island01 {
-  margin-top: 80px;
-  max-width: 1110px;
-  height: 550px;
-  border-radius: 5px;
-  background-image: url("../img/Jiji/Jiji-island01.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.section6 {
-  min-height: 50vh;
-  padding: 150px 0 100px 0;
-  text-align: center;
-}
-
-.section6 .img-main-btn-Shal {
-  max-width: 255px;
-  height: 360px;
-  border-radius: 20px;
-  background-image: url("../img/main-btn-Shal.png");
-  background-position: center;
-  background-repeat: no-repeat;
+.section5 .row:nth-child(2) {
+  margin-top: 7.41vh;
 }
 
 @media (max-width: 320px) {

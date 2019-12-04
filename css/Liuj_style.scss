@@ -61,26 +61,26 @@ monospace;
     min-height: 100vh;
     padding-top: 9.26vh;
     padding-bottom: 9.26vh;
-  
+
     .col::before {
-      content: url('../img/Liuj/Liuj-hakka03-2.jpg');
-      max-width: 390px;
-      position: absolute;
-      right: 1140px;
-      opacity: 0.3;
-      overflow: hidden;
+        content: url('../img/Liuj/Liuj-hakka03-2.jpg');
+        max-width: 390px;
+        position: absolute;
+        right: 1140px;
+        opacity: 0.3;
+        overflow: hidden;
     }
-  
+
     .col::after {
-      content: url('../img/Liuj/Liuj-hakka03-3.jpg');
-      max-width: 390px;
-      position: absolute;
-      top: 0;
-      left: 1140px;
-      opacity: 0.3;
-      overflow: hidden;
+        content: url('../img/Liuj/Liuj-hakka03-3.jpg');
+        max-width: 390px;
+        position: absolute;
+        top: 0;
+        left: 1140px;
+        opacity: 0.3;
+        overflow: hidden;
     }
-  }
+}
 
 
 

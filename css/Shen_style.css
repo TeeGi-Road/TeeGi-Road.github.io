@@ -1,38 +1,87 @@
-.top-right {
-  margin-left: 150px;
-  padding-top: 100px;
-  padding-bottom: 75px;
+.section3 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
-.top-left {
-  padding-top: 100px;
-  padding-bottom: 75px;
+.section3 .col-4 > div:nth-child(2) {
+  margin-top: 3.71vh;
 }
 
-.center-1 {
-  padding-bottom: 75px;
+.section3 p {
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
-.center-2 {
-  padding-bottom: 100px;
-  font-size: 29px;
+.section3 .row:nth-child(2) {
+  margin-top: 7.41vh;
 }
 
-.center-3 {
-  padding-bottom: 40px;
+.section4 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
 }
 
-.center-4 {
-  font-size: 29px;
+.section4 p {
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
-.center-5 {
-  padding-bottom: 100px;
+.section4 .row:nth-child(2) {
+  margin-top: 6.95vh;
 }
 
-#center-6 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.section5 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
+}
+
+.section5 .row:nth-child(2) {
+  margin-top: 6.95vh;
+}
+
+.section5 .text-Shen-island01 {
+  margin-top: 6.95vh;
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
+}
+
+.section6 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
+}
+
+.section6 .row:nth-child(2) {
+  margin-top: 51vh;
+}
+
+.section6 .row:nth-child(2) p {
+  letter-spacing: 0.4rem;
+  line-height: 3.93rem;
+}
+
+.img-Shen-ara01 {
+  background-image: url("../img/Shen/Shen-ara01.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.section7 {
+  min-height: 100vh;
+  padding-top: 9.26vh;
+  padding-bottom: 9.26vh;
+}
+
+.section7 .col-5 div:nth-child(2) {
+  margin-top: 3.71vh;
+}
+
+.section7 .col-5 div:nth-child(2) p {
+  letter-spacing: 0.4rem;
+  line-height: 3.15rem;
 }
 
 @media (max-width: 414px) {

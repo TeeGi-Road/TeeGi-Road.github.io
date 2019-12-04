@@ -35,14 +35,17 @@
   position: absolute;
   right: 1140px;
   opacity: 0.3;
+  overflow: hidden;
 }
 
 .section4 .col::after {
   content: url("../img/Neiw/Neiw-hex02-2.jpg");
+  max-width: 390px;
   position: absolute;
   top: 0;
   left: 1140px;
   opacity: 0.3;
+  overflow: hidden;
 }
 
 .section5 {
