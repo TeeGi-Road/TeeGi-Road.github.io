@@ -27,11 +27,11 @@
         <nav class="navbar navbar-expand-xl navbar-dark nav-white">
             <div class="container">
                 <a class="navbar-brand py-0" href="./index.html">
-                    <img src="./img/main/Logo.png" alt="台鐵 鐵路 支線 鐵支路 Logo"></a>
+                    <img src="./img/main/Logo-en.png" alt="台鐵 鐵路 支線 鐵支路 Logo"></a>
                 <!-- 漢堡條 -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Toggle navigation" data-toggle="dropdown" aria-haspopup="true">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- 選單選項 -->
@@ -65,58 +65,60 @@
     </header>
     <main>
         <section>
-            <div class="container-fluid img-index-bgi">
+            <div class="container-fluid">
+                <video class="video-index-bgi" src="./img/index/Matata_Straights_train.mp4" autoplay muted loop
+                    autobuffer playsinline></video>
                 <div class="container index1">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-xl-6 col-md">
                             <img src="./img/main/Logo.png" alt="鐵支路 LOGO">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-8 text-justify">
+                        <div class="col-xl-8 col-md text-justify">
                             <p class="my-0">
-                                轟隆轟隆，乘著火車，台灣各地的山海美景一覽無遺，過了山洞準備迎接浩瀚海景，或是海線聽濤聲、嗅海味，木造車站更散發濃濃懷舊風情。而昔日運煤礦及木材的鐵道如今穿越鄉間來到純樸的小鎮，又或是攀山越嶺進入森林，現在，我們將帶領你深入探索每條支線的祕站風景與故事。
+                                轟隆轟隆，乘著火車，台灣各地的山海美景一覽無遺，過了山洞準備迎接浩瀚海景，或是海線聽濤聲、嗅海味，木造車站更散發濃濃懷舊風情。而昔日運煤礦及木材的鐵道如今穿越鄉間來到純樸的小鎮，又或是攀山越嶺進入森林，現在，我們將帶領你深入探索每條支線的祕站風景與故事。本列車目前位於鐵支路總站，可自由選擇各支線。
                             </p>
-                            <p class="my-0">本列車目前位於鐵支路總站，可自由選擇各支線。</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-2"></div>
                         <div class="col-9">
                             <div class="img-index-mg"><img src="./img/index/index-mq.png" alt="木製跑馬燈框"></div>
                             <div class="marquee"><img src="./img/index/index-mqText.png" alt="跑馬燈文字"></div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
         <section>
             <div class="container index2">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-xl-2">
                         <a href="./Neiw.html"><img src="./img/index/index-btn-Neiw.png" alt="前進內灣線"></a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2">
                         <a href="./Liuj.html"><img src="./img/index/index-btn-Liuj.png" alt="前進六家線"></a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2">
                         <a href="./Jiji.html"><img src="./img/index/index-btn-Jiji.png" alt="前進集集線"></a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2">
                         <a href="./Shal.html"><img src="./img/index/index-btn-Shal.png" alt="前進沙崙線"></a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2">
                         <a href="./Shen.html"><img src="./img/index/index-btn-Shen.png" alt="前進深澳線"></a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-xl-2">
                         <a href="./Ping.html"><img src="./img/index/index-btn-Ping.png" alt="前進平溪線"></a></div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="text-center">
-        <div class="container">
-            <p class="my-0">Copyright &copy; 2019 僅供RWD互動設計前端職訓班教學使用</p>
+        <div class="container d-inline-flex justify-content-center flex-wrap">
+            <p class="my-0">Copyright &copy; 2019 </p>
+            <p class="my-0">僅供RWD互動設計前端職訓班教學使用</p>
         </div>
     </footer>
 
@@ -137,6 +139,8 @@
     </script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Modernizr.mq() JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
 
     <script src="./js/index_script.js"></script>
 </body>

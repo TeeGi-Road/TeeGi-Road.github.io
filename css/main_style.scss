@@ -27,9 +27,12 @@ body {
     font-size: $font-size-content-l;
 }
 
-nav {
+.navbar {
     background-color: $navbar-color;
     font-size: $font-size-content-m;
+    // width: 100%;
+    // position: absolute;
+    // z-index: 999;
 
     a {
         letter-spacing: 0.6rem;
@@ -112,13 +115,13 @@ span {
     .row:nth-child(2) {
         margin: 10.32vh 0;
 
-        p {
-            font-size: $font-size-content-h1;
-            font-weight: bold;
-            writing-mode: vertical-rl;
-            letter-spacing: 0.625rem;
-            position: absolute;
-        }
+        // p {
+        //     font-size: $font-size-content-h1;
+        //     font-weight: bold;
+        //     writing-mode: vertical-rl;
+        //     letter-spacing: 0.625rem;
+        //     position: absolute;
+        // }
     }
 }
 
@@ -204,27 +207,133 @@ footer {
     }
 }
 
-// @media (max-width: 1199.98px)
-.dropdown-menu {
-    width: 100vw;
-    background-color: rgba($color: $navbar-color, $alpha: 0.9);
-    top: 95%;
-    left: unset;
-    right: 0;
-    border: unset;
-    border-radius: unset;
+@media (max-width: 1199.98px) {
+    .dropdown-menu {
+        width: 100vw;
+        background-color: rgba($color: $navbar-color, $alpha: 0.9);
+        top: 95%;
+        left: unset;
+        right: 0;
+        border: unset;
+        border-radius: unset;
 
-    .dropdown-item {
-        background-color: transparent;
-        display: block;
-        clear: both;
-        text-align: inherit;
-        white-space: pre-wrap;
+        .dropdown-item {
+            background-color: transparent;
+            display: block;
+            clear: both;
+            text-align: inherit;
+            white-space: pre-wrap;
 
-        li {
-            display: inline-block;
+            li {
+                display: inline-block;
+            }
         }
     }
-}
 
-@media (max-width: 1199.98px) {}
+    .section1 {
+        min-height: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+
+        .row:nth-child(1)::before {
+            content: '';
+            height: 40px;
+        }
+
+        .row:nth-child(1) {
+            margin-top: 10%;
+
+            div:nth-child(1)>.img-main-digibar {
+                img:nth-child(1) {
+                    display: none;
+                    width: 80%;
+                }
+
+                img:nth-child(2) {
+                    // display: none;
+                    width: 80%;
+                }
+            }
+
+            .marquee {
+                img {
+                    width: 50%;
+                }
+            }
+
+            div:nth-child(2)>.img-main-digibar {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .row:nth-child(2) {
+            margin: unset;
+            margin-top: 10%;
+
+            .col {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .section2 {
+        min-height: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+
+        .row:nth-child(1) {
+            margin-top: 15%;
+
+            .col {
+                text-align: center;
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+
+        .row:nth-child(2) {
+            margin-top: 10%;
+
+            .col {
+                p {
+                    font-size: 0.75rem;
+                    letter-spacing: 0.2rem;
+                    line-height: 1.1rem;
+                }
+            }
+        }
+
+        .row:nth-child(3) {
+            margin-top: 10%;
+
+            .col-6 {
+                div {
+                    img {
+                        width: 38vw;
+                    }
+                }
+            }
+        }
+
+        .row:nth-child(4) {
+            margin-top: 5%;
+
+            .col {
+                img {
+                    width: 80vw;
+                }
+            }
+        }
+    }
+
+    .img-main-bgi {
+        background-size: contain;
+        background-position-y: 107%;
+    }
+}
