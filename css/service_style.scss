@@ -21,14 +21,21 @@ sans-serif;
 $web-font-1: 'Share Tech Mono',
 monospace;
 
-.service1 {
-    // height: clac(100vh - 56px);
-    min-height: 76.3vh;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+.navbar {
+    width: 100%;
+    position: absolute;
+    // z-index: 999;
 }
 
-// @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,900,800i');
+.service1 {
+    padding-top: calc(6vh + 56px);
+    padding-bottom: 6vh;
+    width: 1110px;
+    height: unset;
+    min-height: 82.5vh;
+}
+// from: https://codepen.io/Alca/pen/VByeJd
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,400,900,800i');
 
 $accent-color: hsl(204, 90%, 50%);
 $curve: cubic-bezier(0.7, 0, 0.3, 1);
@@ -40,27 +47,10 @@ a {
 }
 
 #hero-slides {
-    // --page: 0;
-    // height: 100vh;
-    // background: hsl(210, 23%, 19%);
-    // background: linear-gradient(90deg, hsl(210, 13%, 28%) 0%, hsl(210, 23%, 19%) 100%);
 
     #slides-cont {
-        // position: relative;
-        // overflow: hidden;
-        // --button-height: 6vh;
-        // --button-spacing: 0.2vh;
 
         .button {
-            // width: 5vw;
-            // height: var(--button-height);
-            // background: $accent-color;
-            // // text-align: center;
-            // position: absolute;
-            // right: 5.375vw;
-            // top: 38vh;
-            // z-index: 100;
-            // cursor: pointer;
 
             &:before,
             &:after {
@@ -100,12 +90,8 @@ a {
     }
 
     #slides {
-        // --slides-height: 76vh;
         --slides-height: 57vh;
-        width: auto;
-        // width: 65%;
-        // height: var(--slides-height);
-        // padding: 0 10vw;
+        width: 1110px;
         font-size: 0;
         white-space: nowrap;
         position: absolute;
@@ -116,8 +102,7 @@ a {
             display: inline-block;
             vertical-align: top;
             font-size: 1.5vw;
-            // width: 24em;
-            width: 23em;
+            width: 33%;
             height: var(--slides-height);
             margin: 0 1.333em;
             background: hsl(210, 23%, 8%);
@@ -206,12 +191,11 @@ a {
                 font-size: 2.667em;
                 font-weight: 900;
                 transition-delay: 50ms;
+                line-height: 1.2;
             }
 
             .link {
                 display: inline-block;
-                // background: $accent-color;
-                // padding: 0.5em 1.25em;
                 font-size: 1.33em;
                 opacity: 0;
                 position: absolute;
@@ -252,7 +236,7 @@ a {
 
                 .headline {
                     transition-delay: 100ms;
-                    bottom: 1.5em;
+                    bottom: 1.8em;
                 }
 
                 .link {
@@ -260,11 +244,19 @@ a {
                     opacity: 1;
                     transition-delay: 250ms;
                     pointer-events: auto;
+                    margin-top: 1em;
                 }
             }
         }
     }
 
+}
+
+@media (max-width: 1199.98px){
+
+    body{
+        --slides-per-page: 1;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1699px) {
@@ -273,16 +265,18 @@ a {
     }
 
     #hero-slides #slides .slide {
-        font-size: 1vw;
+        font-size: 0.75vw;
+        width: 33%;
     }
 }
 
 @media (min-width: 1700px) {
     body {
-        --slide-per-age: 4;
+        --slide-per-age: 3;
     }
 
     #hero-slides #slides .slide {
         font-size: 0.75vw;
+        width: 33%;
     }
 }

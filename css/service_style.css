@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,400,900,800i");
+.navbar {
+  width: 100%;
+  position: absolute;
+}
+
 .service1 {
-  min-height: 76.3vh;
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+  padding-top: calc(6vh + 56px);
+  padding-bottom: 6vh;
+  width: 1110px;
+  height: unset;
+  min-height: 82.5vh;
 }
 
 a {
@@ -44,7 +52,7 @@ a {
 
 #hero-slides #slides {
   --slides-height: 57vh;
-  width: auto;
+  width: 1110px;
   font-size: 0;
   white-space: nowrap;
   position: absolute;
@@ -60,7 +68,7 @@ a {
   display: inline-block;
   vertical-align: top;
   font-size: 1.5vw;
-  width: 23em;
+  width: 33%;
   height: var(--slides-height);
   margin: 0 1.333em;
   background: #101419;
@@ -152,6 +160,7 @@ a {
   font-weight: 900;
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
+  line-height: 1.2;
 }
 
 #hero-slides #slides .slide .link {
@@ -203,7 +212,7 @@ a {
 #hero-slides #slides .slide.hover .headline, #hero-slides #slides .slide:hover .headline {
   -webkit-transition-delay: 100ms;
           transition-delay: 100ms;
-  bottom: 1.5em;
+  bottom: 1.8em;
 }
 
 #hero-slides #slides .slide.hover .link, #hero-slides #slides .slide:hover .link {
@@ -212,6 +221,13 @@ a {
   -webkit-transition-delay: 250ms;
           transition-delay: 250ms;
   pointer-events: auto;
+  margin-top: 1em;
+}
+
+@media (max-width: 1199.98px) {
+  body {
+    --slides-per-page: 1;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1699px) {
@@ -219,16 +235,18 @@ a {
     --slides-per-page: 3;
   }
   #hero-slides #slides .slide {
-    font-size: 1vw;
+    font-size: 0.75vw;
+    width: 33%;
   }
 }
 
 @media (min-width: 1700px) {
   body {
-    --slide-per-age: 4;
+    --slide-per-age: 3;
   }
   #hero-slides #slides .slide {
     font-size: 0.75vw;
+    width: 33%;
   }
 }
 /*# sourceMappingURL=service_style.css.map */
