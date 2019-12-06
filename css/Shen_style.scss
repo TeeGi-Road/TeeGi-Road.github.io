@@ -63,7 +63,8 @@
     padding-bottom: 9.26vh;
 
     .row:nth-child(2) {
-        margin-top: 51vh;
+        // margin-top: 51vh;
+        margin-top: 49%;
 
         p {
             letter-spacing: 0.4rem;
@@ -94,26 +95,79 @@
     }
 }
 
+@media (max-width: 1199.98px) {
+    .section3 {
+        min-height: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        img {
+            width: 100%;
+        }
 
-// 待調整
-@media(max-width:414px) {
-    .center-1 {
-        width: 95vh;
+        p {
+            font-size: 0.75rem;
+            letter-spacing: 0.2rem;
+            line-height: 1.1rem;
+        }
     }
 
-    .center-2 {
-        width: 90vh;
+    .section4 {
+        min-height: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 0.75rem;
+            letter-spacing: 0.2rem;
+            line-height: 1.1rem;
+        }
     }
 
-    .center-3 {
-        width: 90vh;
+    .section5 {
+        min-height: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 0.75rem;
+            letter-spacing: 0.2rem;
+            line-height: 1.1rem;
+        }
     }
 
-    .center-4 {
-        width: 90vh;
+    .section6 {
+        min-height: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 0.75rem;
+            letter-spacing: 0.2rem;
+            line-height: 1.1rem;
+        }
     }
 
-    #center-6 {
-        width: 90vh;
+    .section7 {
+        min-height: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 0.75rem;
+            letter-spacing: 0.2rem;
+            line-height: 1.1rem;
+        }
     }
 }

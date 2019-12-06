@@ -114,171 +114,67 @@
 }
 
 @media (max-width: 320px) {
-  body {
-    font-size: 12px;
+  .section3 .mini {
+    width: 100%;
   }
-  .section1 {
-    padding: 10% 0 15% 0;
-  }
-  .section2 {
-    padding: 0 0 15% 0;
-  }
-  .section2 .text-main-Neiw-cotent {
-    margin-top: 10%;
-  }
-  .section2 .text-main-Neiw-cotent p {
-    margin-bottom: 0;
-  }
-  .section3 {
-    padding: 0;
-  }
-  .section3 .img-Neiw-hex01 {
-    width: 320px;
-  }
-  .section3 .img-Neiw-hex01 .container {
-    padding: 0;
-  }
-  .section3 .img-Neiw-hex01 .container .Neiw-hex-title {
-    margin: 0;
-  }
-  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .col-4 {
-    max-width: unset;
-  }
-  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .mini1 {
-    width: 451px;
-    height: 81px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .mini1 .img1 {
-    margin-bottom: 0;
-    width: 34%;
-  }
-  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .mini2 {
-    width: 151px;
-    height: 81px;
-  }
-  .section3 .img-Neiw-hex01 .container .Neiw-hex-title .img2 {
-    width: 60%;
-    margin-top: 5%;
-  }
-  .section3 .container {
-    padding: 0;
-  }
-  .section3 .container .text-Neiw-hex01 {
-    margin-top: 5%;
-  }
-  .section3 .container .text-Neiw-hex01 p {
-    margin-bottom: 0;
+  .section3 .row:nth-child(3) {
+    margin-top: 105vh;
   }
   .section4 {
-    padding: 15% 0 0 0;
-  }
-  .section5 {
-    min-height: 100vh;
-    padding: 0 0 15% 0;
-    text-align: left;
-  }
-  .section5 .mini1 {
-    width: 351px;
-    height: 106px;
+    padding: 15% 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .section5 .img1 {
-    width: 34%;
-    margin-bottom: 5%;
+  .section4 img {
+    width: 100%;
   }
-  .section5 .mini2 {
-    width: 351px;
-    height: 106px;
+  .section5 {
+    padding-top: 0;
+    padding-bottom: 100vh;
   }
-  .section5 .img2 {
-    margin-top: 0;
-    width: 34%;
+  .section5 .mini {
+    width: 90%;
   }
-  .section5 .text-Neiw-cjcu01 {
-    letter-spacing: 6px;
-    line-height: 1.6em;
+  .section5 .col-lg-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section5 .col-lg-4 > div:nth-child(2) {
+    margin-top: 1.71vh;
+  }
+  .section5 .padding_top {
+    padding-top: 2vh;
   }
   .section5 p {
-    margin-bottom: 0;
+    letter-spacing: 0.1rem;
+    line-height: 1.15rem;
+    padding: 2vh 0 7vh 0;
   }
-  .section5 .img2 {
-    margin: 5% 0 0 0;
+  .section6 .rounded-lg {
+    width: 90%;
   }
-  .section6 .row {
-    padding-bottom: 5%;
+  .section6 .row:nth-child(1) p {
+    letter-spacing: 0.4rem;
+    line-height: 1.15rem;
+    padding-top: 4.8vh;
   }
-  .section6 .row .mini {
-    width: 446px;
-    height: 421px;
-  }
-  .section6 .row .img {
-    width: 34%;
-  }
-  .section6 .row .text-Neiw-firefly01 {
-    letter-spacing: 6px;
-    line-height: 1.6em;
-  }
-  .section6 p {
-    margin-bottom: 0;
+  .section6 .row:nth-child(2) {
+    margin-top: 4.8vh;
   }
   .section7 {
     min-height: unset;
     padding: 15% 0;
   }
-  .section7 .mini1 {
-    width: 351px;
-    height: 106px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .section7 .col-2 {
-    padding: 0;
-  }
-  .section7 .img1 {
-    margin-bottom: 5%;
-    width: 34%;
-  }
-  .section7 .mini2 {
-    width: 351px;
-    height: 106px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .section7 .mini2 img {
-    margin-bottom: 5%;
-    width: 34%;
-  }
-  .section7 .img2 {
-    width: 320px;
-  }
-  .section7 .col-2 {
-    width: 0 !important;
-    height: 0;
-  }
-  .section7 .col {
-    padding: 0;
-  }
-  .section7 p {
-    padding-left: 30px;
+  .section7 .rounded-lg {
+    width: 100%;
   }
   .section8 {
     padding: 0 0 15% 0;
@@ -293,9 +189,6 @@
   }
   .section8 .col-3 img {
     width: 61.25px;
-  }
-  .section9 {
-    padding: 5% 0 10% 0;
   }
 }
 /*# sourceMappingURL=Neiw_style.css.map */

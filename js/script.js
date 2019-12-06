@@ -185,27 +185,24 @@ $(document).ready(function () {
 });
 
 // 改變瀏覽器寬度時 add/remove class
-function windowSize() {
-    if ($(window).width() < 1200) {
-        $('.navbar .container button').attr('data-toggle', 'dropdown');
-        $('.navbar .container button').attr('aria-haspopup', 'true');
-        $('.navbar .container button').attr('data-target', '');
-        $('.navbar .container button').attr('aria-controls', '');
-        $('.navbar .container button').attr('aria-label', '');
+function mq() {
+    var query = Modernizr.mq('(max-width: 1199.98px)');
+    if (query) {
+        $('#holder').html('true');
+        // JavaScript here
+        // 當CSS media query計算的視窗寬度小於 px時執行
         $('.navbar .container div').addClass('dropdown-menu');
         $('.navbar .container div ul').addClass('dropdown-item');
-
     } else {
-        $('.navbar .container button').attr('data-toggle', 'collapse');
-        $('.navbar .container button').attr('aria-haspopup', '');
-        $('.navbar .container button').attr('data-target', '#navbarSupportedContent');
-        $('.navbar .container button').attr('aria-controls', 'navbarSupportedContent');
-        $('.navbar .container button').attr('aria-label', 'Toggle navigation');
+        $('#holder').html('false');
+        // JavaScript here
+        // 當CSS media query計算的視窗寬度大於等於 px時執行
         $('.navbar .container div').removeClass('dropdown-menu');
         $('.navbar .container div ul').removeClass('dropdown-item');
     }
 };
+
 $(window).resize(function () {
-    windowSize();
+    mq();
 });
-windowSize();
+mq();

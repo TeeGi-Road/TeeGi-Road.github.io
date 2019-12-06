@@ -114,7 +114,6 @@ function mq2() {
                 <a href="./Ping.html"><img src="./img/index/index-btn-Ping-mobi.jpg" alt="前進平溪線"></a>
             </div>
         </div>`;
-        console.log(document.querySelector('.index2').innerHTML, $(window).width());
     } else {
         $('#holder').html('false');
         // JavaScript here
@@ -124,10 +123,8 @@ function mq2() {
 
 
 $(window).resize(function () {
-    // windowSize();
     mq();
     mq2();
 });
-// windowSize();
 mq();
 mq2();

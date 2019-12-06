@@ -55,7 +55,7 @@
 }
 
 .section6 .row:nth-child(2) {
-  margin-top: 51vh;
+  margin-top: 49%;
 }
 
 .section6 .row:nth-child(2) p {
@@ -84,21 +84,71 @@
   line-height: 3.15rem;
 }
 
-@media (max-width: 414px) {
-  .center-1 {
-    width: 95vh;
+@media (max-width: 1199.98px) {
+  .section3 {
+    min-height: unset;
+    padding-top: unset;
+    padding-bottom: unset;
   }
-  .center-2 {
-    width: 90vh;
+  .section3 img {
+    width: 100%;
   }
-  .center-3 {
-    width: 90vh;
+  .section3 p {
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.1rem;
   }
-  .center-4 {
-    width: 90vh;
+  .section4 {
+    min-height: unset;
+    padding-top: unset;
+    padding-bottom: unset;
   }
-  #center-6 {
-    width: 90vh;
+  .section4 img {
+    width: 100%;
+  }
+  .section4 p {
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.1rem;
+  }
+  .section5 {
+    min-height: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+  .section5 img {
+    width: 100%;
+  }
+  .section5 p {
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.1rem;
+  }
+  .section6 {
+    min-height: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+  .section6 img {
+    width: 100%;
+  }
+  .section6 p {
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.1rem;
+  }
+  .section7 {
+    min-height: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+  .section7 img {
+    width: 100%;
+  }
+  .section7 p {
+    font-size: 0.75rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.1rem;
   }
 }
 /*# sourceMappingURL=Shen_style.css.map */
