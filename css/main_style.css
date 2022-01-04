@@ -142,6 +142,11 @@ span {
   align-items: center;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  min-width: 75px;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   content: '';
