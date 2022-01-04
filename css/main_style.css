@@ -114,6 +114,7 @@ span {
 
 .nextTrip {
   padding: 13.89vh 0 9.26vh 0;
+  overflow: hidden;
 }
 
 .nextTrip .img-main-btn img {
